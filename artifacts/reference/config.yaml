@@ -1,0 +1,220 @@
+task:
+  order:
+  - static
+  - temporal
+  - dynamic
+  - text_video
+  descriptions:
+    static: clarity, sharpness, color accuracy, and overall aesthetic appeal of the
+      video frames
+    temporal: Temporal smoothness evaluates the temporal coherence of video frames
+      and the absence of temporal artifacts such as flickering or jittering.
+    dynamic: Dynamic degree evaluates the extent to which the video incorporates large
+      motions and dynamic scenes, which contributes to the overall liveliness and
+      engagement measurement of the content.
+    text_video: Text-video (TV) correspondence assesses how accurately the video content
+      reflects the details, themes, and actions described in the prompt, ensuring
+      that the generated video effectively translates the text input into a visual
+      narrative.
+model:
+  name: multimodal_readout_variants
+  d_model: 512
+  dimension_encoder:
+    kind: clip
+    model_dir: /hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14
+    feature_dim: 768
+  artifact_query_sigmoid:
+    num_queries: 2
+    lambda_max: 2.0
+    lambda_init: 0.1
+    eps: 1.0e-06
+  backbones:
+    vital:
+      model_dir: /hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M
+      dtype: bfloat16
+      frame_chunk_size: 4
+    slowfast:
+      checkpoint_path: /hdd/u202511081000084/IMC_QZL/pretrained_models/slowfast.pth
+      max_positions: 256
+    blip:
+      checkpoint_path: /hdd/u202511081000084/IMC_QZL/pretrained_models/model_large.pth
+      bert_path: /hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased
+      med_config: /hdd/u202511081000084/IMC_QZL/AIDER/configs/med_config.json
+      image_size: 224
+      dtype: bfloat16
+      text_parameter_precision: fp32_master_bf16_embedding_outputs
+      max_text_length: 50
+      text_padding: max_length
+      train_text_encoder: true
+      text_encoder_gradient_checkpointing: true
+  two_stage_moe:
+    num_experts: 7
+    top_k: 2
+    fusion_width: 1536
+    first_stage: absent_task_film
+    second_stage: 12_layer_transformer_moe
+    head: shared
+  blip_temporal_sa: true
+  task_embedding_transform: fp32_four_task_mean_subtract_then_row_l2_normalize
+  readout_variant: film_transformer
+  readout_spec:
+    width: 1536
+    depth: 12
+    heads: 12
+    num_experts: 7
+    top_k: 2
+    expert_hidden: 1536
+    dropout: 0.0
+    block: u=x+MHA(LN(x)); y=u+MoE(u)
+    expert: LN->Linear->GELU->Linear
+    final_norm: true
+    fixed_sinusoidal_positions: true
+    checkpoint_use_reentrant: false
+    film: gamma*x+beta
+    film_widths:
+    - 512
+    - 256
+    - 768
+    film_identity_init: true
+data:
+  train_manifest: /hdd/u202511081000084/IMC_QZL/AIDER/data/AIGVQA-DB/Multi-Seed/split_01/train.jsonl
+  val_manifest: /hdd/u202511081000084/IMC_QZL/AIDER/data/AIGVQA-DB/Multi-Seed/split_01/test.jsonl
+  test_manifest: null
+  video_root: /hdd/u202511081000084/IMC_QZL/My_Datasets/AIGV-DB/MOS/MOS_Videos
+  num_frames: 8
+  min_total_frames: 8
+  vital_size: 448
+  expert_size: 224
+  artifact:
+    cache_dir: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/cache/artifact_prior_v3_g9
+    normalization: percentile
+    percentile_lo: 1.0
+    percentile_hi: 99.0
+    fixed_scale: 0.1
+    gaussian_kernel_size: 9
+    gaussian_sigma: 0.0
+    fb_alpha: 0.05
+    fb_beta: 1.5
+    tex_percentile: 70.0
+    tex_abs_thr: 0.03
+    structure_percentile: 90.0
+loader:
+  video_batch_size: 8
+  num_workers: 4
+  pin_memory: true
+  persistent_workers: true
+  drop_last: false
+  sampler_seed: 9042
+training:
+  initialization: /hdd/u202511081000084/IMC_QZL/AIDER/artifacts/baseline_seed42_initialization.pt
+  device: cuda:0
+  precision: bfloat16
+  cpu_threads: 2
+  seed: 42
+  lr: 0.0001
+  module_lrs:
+    text_video_backbone: 1.0e-05
+  weight_decay: 0.05
+  betas:
+  - 0.9
+  - 0.999
+  warmup_ratio: 0.05
+  gradient_clip: 1.0
+  rank_loss_weight: 0.0
+  epochs: 10
+  gradient_accumulation: 1
+  output_dir: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/robustness/depth2_cross_branch_shared_expert_multiseed_10splits_seed42/split_01
+  resume: null
+  warmup_steps: 116
+  loss_kind: smooth_l1
+  smooth_l1_beta: 0.1
+evaluation:
+  device: cuda:0
+  precision: bfloat16
+  checkpoint: null
+inference:
+  device: cuda:0
+  precision: bfloat16
+mixed_task_experiment:
+  loss: smooth_l1
+  beta: 0.1
+  reduction: sample_mean
+  sampling: global_pair_permutation_cpu_seed_plus_epoch
+  batch_size: 8
+  sampler_seed: 9042
+  blip_update_policy: all_tasks
+experiment:
+  contract: aider_multimodal_readout_variants_v1
+  variant: film_transformer
+  first_stage: S
+  second_stage: S
+  head: S
+  historical_config: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/blip_sa_task_specific_two_stage_moe_task_fusion_head_n15_k3_d1536_smooth_l1_mixed_fp32_max50_seed42/config.yaml
+  sharing_includes_gate: true
+  sampling: global_pair_permutation_cpu_seed_plus_epoch
+  blip_text_policy: full_finetuning_train_dropout_gradient_checkpointing
+  blip_readout: frame_cross_modal_cls_original_temporal_sa
+  direct_control: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/blip_sa_shared_two_stage_moe_shared_head_centered_task_n15_k3_smooth_l1_mixed_fp32_max50_seed42
+  control_config_sha256: 8c0c23887143332622da8af17c8a654dc482a3044c3518f83d3f9c7f4509f1fa
+  task_embedding_transform: fp32_four_task_mean_subtract_then_row_l2_normalize
+  task_centering_epsilon: 1.0e-12
+  task_centering_scope: all_four_tasks_once_before_training
+  secondary_control: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/blip_sa_moe_sharing_factorial_n15_k3_fp32_max50_seed42/SSS
+  checkpoint_includes_complete_blip_text: true
+baseline:
+  name: FiLM + 12-layer Task-MoE Transformer
+  promoted_from: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/centered_shared_multimodal_readout_seed42/film_transformer
+  result_selection: User-selected baseline, not a claim of best across all tasks
+ablation:
+  contract: aider_depth2_crossbranch_alwayson_multiseed_v1
+  variant: cross_branch_shared_expert_multiseed
+  gpu: 6
+  tasks:
+  - static
+  - temporal
+  - dynamic
+  - text_video
+  task_ids:
+  - 0
+  - 1
+  - 2
+  - 3
+  depth: 2
+  epochs: 10
+  warmup: 116
+  initialization: seed42_untrained
+  control: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/depth2_video_adaptive_film_router_seed42/adaptive_film
+  control_config_sha256: 610d2d9ea146e03c3fe7893a3cf8d2c3c82da15647189b62fc898b56fb56d67e
+  control_best_sha256: null
+  cross_branch_masked_shared_summary: false
+  routed_experts: 7
+  routed_top_k: 2
+  layerwise_always_on_experts: 1
+  film: true
+  router: false
+  cross_branch_video_modulation: three_independent_two_input_mlps
+  video_state_inputs:
+    technical:
+    - motion
+    - text_video
+    motion:
+    - technical
+    - text_video
+    text_video:
+    - technical
+    - motion
+  video_state_input_widths:
+    technical: 1024
+    motion: 1280
+    text_video: 768
+  video_state_output_width: 256
+  replaced_incorrect_run: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/depth2_targeted_head_crossfilm_sharedexpert_seed42/cross_branch_adaptive_film
+  split: split_01
+  split_info_sha256: 82fcf66e6496abaf45f48f2c02e1420d5c7351dd74b6b008ef7ef88be5f79adf
+  train_manifest_sha256: 7e32d2259df194d61aa466329c2e8dbd589f73a6e9cd22077c31b7f417d8aabf
+  test_manifest_sha256: 7695a83169830251b7bc5814fb9546befaa19b52d7fdcc4bd0b125227dc33af5
+  combined_from_cross_branch: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/depth2_targeted_head_crossfilm_sharedexpert_seed42/cross_branch_adaptive_film_run2
+  shared_expert_seed_offsets:
+  - 830000
+  - 830001
+  selection: test_macro_srocc_same_heldout

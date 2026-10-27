@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "source_stage": "/tmp/aider_main_export_build/package",
+  "destination": "/hdd/u202511081000084/IMC_QZL/AIDER-main",
+  "files_copied": 292,
+  "total_bytes": 18328408363,
+  "all_destination_hashes_verified": true,
+  "original_experiment_modified": false,
+  "symlinks_or_hardlinks_used": false
+}

@@ -1,0 +1,105 @@
+{
+  "initial_state_sha256": "5e0e46ce0a796fca0de8ebaefe5f50c91be34e98bd84af414f3cf3e23b650f10",
+  "feature_only_initial_sha256": "55153c7a914626a66a6757823082e2936b95dbeaeb0dc1be6efc5256293c112e",
+  "feature_only_rng_sha256": "deebeee84a1da43276837bc0f376ae8b90228c67f7889a8b1549291375d984e1",
+  "fixed_feature_predictions": [
+    -0.03784462809562683,
+    0.04000621289014816,
+    0.016499467194080353,
+    0.03228076547384262
+  ],
+  "sampling_sha256": [
+    "7b9746e055df264eab0618f805b2dae1e94e167f404d7bd1e1639dc5bd992fa6",
+    "39b135c2284d73b22d94a26a3d28691cc6e6fd162831ba3ea6479474b9d55755",
+    "481a2610c39e594dbfb33424eeade5cebaf6bb61a6a6a3d82bef81c610b0231d",
+    "70ba89baa487f1ebd86afb6591b8950c3700349d0dca6fcc5a850d399860d9cd",
+    "ed413732c083dfb3e79958e8fbf29e78bd230a8594e11f4fe8f4406e1e3b4d4b",
+    "0011949d2e96732fbebf6bcf117e309d2f79ea29855fb6e3156b082c739971e6",
+    "fc76d5c59722c168df474864b7d98755af52867ed1487758c79c0126ee326c19",
+    "48e20e7004a306248bd3a949bc0249d55265e65a94843563b8bc03a77ea886df",
+    "f278ca4da9e66eff4cfbdbdded6c8d4f02ab315093e2c5e60b9033e3aa343a2d",
+    "13dc052d916358736e0bf42c4ddbaaad327ee8f7da67aa63a1c71fb963589120"
+  ],
+  "model_metadata": {
+    "name": "multimodal_readout_variants",
+    "d_model": 512,
+    "dimension_encoder": {
+      "kind": "clip",
+      "model_dir": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14",
+      "feature_dim": 768
+    },
+    "artifact_query_sigmoid": {
+      "num_queries": 2,
+      "lambda_max": 2.0,
+      "lambda_init": 0.1,
+      "eps": 1e-06
+    },
+    "backbones": {
+      "vital": {
+        "model_dir": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M",
+        "dtype": "bfloat16",
+        "frame_chunk_size": 4
+      },
+      "slowfast": {
+        "checkpoint_path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/slowfast.pth",
+        "max_positions": 256
+      },
+      "blip": {
+        "checkpoint_path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/model_large.pth",
+        "bert_path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased",
+        "med_config": "/hdd/u202511081000084/IMC_QZL/AIDER/configs/med_config.json",
+        "image_size": 224,
+        "dtype": "bfloat16",
+        "text_parameter_precision": "fp32_master_bf16_embedding_outputs",
+        "max_text_length": 50,
+        "text_padding": "max_length",
+        "train_text_encoder": true,
+        "text_encoder_gradient_checkpointing": true
+      }
+    },
+    "two_stage_moe": {
+      "num_experts": 7,
+      "top_k": 2,
+      "fusion_width": 1536,
+      "first_stage": "absent_task_film",
+      "second_stage": "12_layer_transformer_moe",
+      "head": "shared"
+    },
+    "blip_temporal_sa": true,
+    "task_embedding_transform": "fp32_four_task_mean_subtract_then_row_l2_normalize",
+    "readout_variant": "film_transformer",
+    "readout_spec": {
+      "width": 1536,
+      "depth": 12,
+      "heads": 12,
+      "num_experts": 7,
+      "top_k": 2,
+      "expert_hidden": 1536,
+      "dropout": 0.0,
+      "block": "u=x+MHA(LN(x)); y=u+MoE(u)",
+      "expert": "LN->Linear->GELU->Linear",
+      "final_norm": true,
+      "fixed_sinusoidal_positions": true,
+      "checkpoint_use_reentrant": false,
+      "film": "gamma*x+beta",
+      "film_widths": [
+        512,
+        256,
+        768
+      ],
+      "film_identity_init": true
+    }
+  },
+  "checkpoint_sha256": {
+    "best": "9a78f470014e9a15381b57b290781400e4efd10270c7b40b04073eb72de47d9e",
+    "last": "46772d48256d4ab80000a80bd31ea0d14550d0fb078681f2957986e726990bc1"
+  },
+  "assets_sha256": {
+    "task_tables.json": "19422a9cc43e08161cd7e221f5ea944380cddf88647696b7c9b3aeeea224e5e2",
+    "config.yaml": "750a05bcf2b32946c2ae2bc3a379a8c80c3dc26b0d4d70303ec7e35b6361309a",
+    "preflight.json": "8fff27a4a677639f862a1546b9cac8274aaed00473a347eed93b0065cddf8e36",
+    "historical_config.yaml": "98bdbdafedef44161bcacf457896d0b471acab5209fafc92d5b3c56368ac7d93",
+    "prior_verification.json": "88d8d0dd1ab4a2b1106c77091b028adae7731309b25afdff63755c850db41ce4",
+    "checkpoint_sources.json": "383e5eed8fedde8b23f1a6a77f4526b917084748e974770d4d06cd5f7b21102b"
+  }
+}

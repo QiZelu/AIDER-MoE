@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "pages": 6,
+  "all_supplied_metrics_verified": true,
+  "native_editable_equations": 2,
+  "tables": 8,
+  "all_pages_visually_reviewed": true,
+  "docx_bytes": 47090,
+  "pdf_bytes": 591479,
+  "outputs": [
+    "/Users/zelu/Desktop/Codes/AIDER-main/output/docs/AIDER_LoRA_CLIP_Adapter_工作记录_20261028.docx",
+    "/Users/zelu/Desktop/Codes/AIDER-main/output/docs/AIDER_LoRA_CLIP_Adapter_工作记录_20261028.pdf"
+  ]
+}

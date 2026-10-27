@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "destination": "/hdd/u202511081000084/IMC_QZL/AIDER-main",
+  "total_gib": 17.07,
+  "copied_file_hashes_verified": true,
+  "full_models_loaded_in_final_directory": true,
+  "checkpoints": {
+    "best_epoch": 7,
+    "last_epoch": 10,
+    "epoch9_epoch": 9
+  },
+  "unit_tests_passed": 8,
+  "model_dependencies_bundled": true,
+  "original_aider_unchanged": true,
+  "dataset_videos_and_prior_cache_copied": false
+}

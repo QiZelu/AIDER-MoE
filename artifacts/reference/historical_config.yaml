@@ -1,0 +1,125 @@
+task:
+  order:
+  - static
+  - temporal
+  - dynamic
+  - text_video
+  descriptions:
+    static: clarity, sharpness, color accuracy, and overall aesthetic appeal of the
+      video frames
+    temporal: Temporal smoothness evaluates the temporal coherence of video frames
+      and the absence of temporal artifacts such as flickering or jittering.
+    dynamic: Dynamic degree evaluates the extent to which the video incorporates large
+      motions and dynamic scenes, which contributes to the overall liveliness and
+      engagement measurement of the content.
+    text_video: Text-video (TV) correspondence assesses how accurately the video content
+      reflects the details, themes, and actions described in the prompt, ensuring
+      that the generated video effectively translates the text input into a visual
+      narrative.
+model:
+  name: blip_sa_task_specific_two_stage_moe_task_fusion_head
+  d_model: 512
+  dimension_encoder:
+    kind: clip
+    model_dir: /hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14
+    feature_dim: 768
+  artifact_query_sigmoid:
+    num_queries: 2
+    lambda_max: 2.0
+    lambda_init: 0.1
+    eps: 1.0e-06
+  backbones:
+    vital:
+      model_dir: /hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M
+      dtype: bfloat16
+      frame_chunk_size: 4
+    slowfast:
+      checkpoint_path: /hdd/u202511081000084/IMC_QZL/pretrained_models/slowfast.pth
+      max_positions: 256
+    blip:
+      checkpoint_path: /hdd/u202511081000084/IMC_QZL/pretrained_models/model_large.pth
+      bert_path: /hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased
+      med_config: /hdd/u202511081000084/IMC_QZL/AIDER/configs/med_config.json
+      image_size: 224
+      dtype: bfloat16
+      text_parameter_precision: fp32_master_bf16_embedding_outputs
+      max_text_length: 50
+      text_padding: max_length
+      train_text_encoder: true
+      text_encoder_gradient_checkpointing: true
+  two_stage_moe:
+    num_experts: 15
+    top_k: 3
+    fusion_width: 1536
+    first_stage: task_specific
+    second_stage: task_specific
+    head: task_specific
+data:
+  train_manifest: /hdd/u202511081000084/IMC_QZL/AIDER/data/AIGVQA-DB/AIGVQA_DB_train.jsonl
+  val_manifest: /hdd/u202511081000084/IMC_QZL/AIDER/data/AIGVQA-DB/AIGVQA_DB_test.jsonl
+  test_manifest: null
+  video_root: /hdd/u202511081000084/IMC_QZL/My_Datasets/AIGV-DB/MOS/MOS_Videos
+  num_frames: 8
+  min_total_frames: 8
+  vital_size: 448
+  expert_size: 224
+  artifact:
+    cache_dir: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/cache/artifact_prior_v3_g9
+    normalization: percentile
+    percentile_lo: 1.0
+    percentile_hi: 99.0
+    fixed_scale: 0.1
+    gaussian_kernel_size: 9
+    gaussian_sigma: 0.0
+    fb_alpha: 0.05
+    fb_beta: 1.5
+    tex_percentile: 70.0
+    tex_abs_thr: 0.03
+    structure_percentile: 90.0
+loader:
+  video_batch_size: 8
+  num_workers: 4
+  pin_memory: true
+  persistent_workers: true
+  drop_last: false
+  sampler_seed: 9042
+training:
+  initialization: /hdd/u202511081000084/IMC_QZL/AIDER/artifacts/baseline_seed42_initialization.pt
+  device: cuda:0
+  precision: bfloat16
+  cpu_threads: 2
+  seed: 42
+  lr: 0.0001
+  module_lrs:
+    text_video_backbone: 1.0e-05
+  weight_decay: 0.05
+  betas:
+  - 0.9
+  - 0.999
+  warmup_ratio: 0.05
+  gradient_clip: 1.0
+  rank_loss_weight: 0.0
+  epochs: 10
+  gradient_accumulation: 1
+  output_dir: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/blip_sa_task_specific_two_stage_moe_task_fusion_head_n15_k3_d1536_smooth_l1_mixed_fp32_max50_seed42
+  resume: null
+  warmup_steps: 116
+  loss_kind: smooth_l1
+  smooth_l1_beta: 0.1
+evaluation:
+  device: cuda:0
+  precision: bfloat16
+  checkpoint: /hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/blip_sa_task_specific_two_stage_moe_task_fusion_head_n15_k3_d1536_smooth_l1_mixed_fp32_max50_seed42/best.pt
+inference:
+  device: cuda:0
+  precision: bfloat16
+mixed_task_experiment:
+  loss: smooth_l1
+  beta: 0.1
+  reduction: sample_mean
+  sampling: global_pair_permutation_cpu_seed_plus_epoch
+  batch_size: 8
+  sampler_seed: 9042
+  blip_update_policy: all_tasks
+  projector_sharing_mode: shared
+_config_path: /hdd/u202511081000084/IMC_QZL/AIDER/configs/baseline.yaml

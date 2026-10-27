@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "initial_state_sha256": "5e0e46ce0a796fca0de8ebaefe5f50c91be34e98bd84af414f3cf3e23b650f10",
+  "sampling_sha256": [
+    "66ef4baa8733ac5afe45fbc1f196e3e9b21f9454fb37472855d3ac521102427b",
+    "48fd2c4b4dfed0e3df156819af9003ce95d021c930c4dc52a36823d1fe5bd166",
+    "632bf35f0ddcf384682befb5c2568c04b7c86ef671edffde798bccb267d851e6",
+    "04290a30fe5fe3107576718875a8a1137d519a3f8655c21559890be782c4c829",
+    "ae6fba199b871fbb63628ecf9089acc46b3ab05cfc84f60d9a9f1fcf1526a59b",
+    "973235c4c5bafc44af5ab74acf131bef12ffa79768621e964d41ebde259f7b98",
+    "dd4fc4fc5765b0797c0a9aa1059cb22064a2b21d4ae4eafb9cfcbd058ecc1360",
+    "c4b89708db2f8d1f612238c0c02a4f7eca534d504ee8246eb2b38826c7d59f07",
+    "269b7e1404257ad4c0d9e5337831681cbf04e2f7faa8432649905c61174c4620",
+    "538b3fb611af5fbe09a08978b33560b7f0711a3b394446155d817ab136786290"
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "loss": 0.5012305378913879,
+      "always_on_updated": true,
+      "inactive_expert_unchanged": true
+    },
+    {
+      "step": 2,
+      "loss": 0.08580081909894943,
+      "always_on_updated": true,
+      "inactive_expert_unchanged": true
+    }
+  ],
+  "checkpoint_reload_max_abs_delta": 0.0,
+  "peak_memory": {
+    "peak_allocated_gib": 5.749597072601318,
+    "peak_reserved_gib": 6.640625,
+    "sampled_process_peak_gib": 7.150390625,
+    "process_samples": 61,
+    "driver_pids": [
+      3505149
+    ],
+    "pid_resolution": "Unique new driver PID across own CUDA context creation",
+    "measurement": "Driver memory for this process only; other GPU users excluded.",
+    "sampling_interval_seconds": 1,
+    "sampling_errors": []
+  }
+}

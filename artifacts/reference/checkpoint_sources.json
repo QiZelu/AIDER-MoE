@@ -1,0 +1,562 @@
+{
+  "initialization": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/baseline_seed42_initialization.pt",
+    "sha256": "80273ff2f6f8d6c5965841bc559c49dd7276bf5832646a7952e4f5ee3cf14947"
+  },
+  "historical_config": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/blip_sa_task_specific_two_stage_moe_task_fusion_head_n15_k3_d1536_smooth_l1_mixed_fp32_max50_seed42/config.yaml",
+    "sha256": "98bdbdafedef44161bcacf457896d0b471acab5209fafc92d5b3c56368ac7d93"
+  },
+  "train_manifest": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/data/AIGVQA-DB/AIGVQA_DB_train.jsonl",
+    "sha256": "bb0cad63c209234d5bef5076c1a7a9877574acbd58791116d93da29931ef0f50"
+  },
+  "val_manifest": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/data/AIGVQA-DB/AIGVQA_DB_test.jsonl",
+    "sha256": "53eb08cd5e0624f5498e602e38024b0f2fc836515a5147141f292458ad0f3068"
+  },
+  "blip_pretrained": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/model_large.pth",
+    "sha256": "f39dab16712aa8d3ed4acb774f0a691d7ddaa7ef6d9c02d395faa852776bb734"
+  },
+  "slowfast_pretrained": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/slowfast.pth",
+    "sha256": "b7f52bcb2e4f45c5a32cafbecfbdc3bd26982aeef5a2127491495dd8de595210"
+  },
+  "vital/added_tokens.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/added_tokens.json",
+    "sha256": "e66b6bc948dec3421f01a8986f31632cf8d556aaa89f7b39c183b3dd4b5b2c83"
+  },
+  "vital/config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/config.json",
+    "sha256": "534d71b3644fdf7bc169d0154a91d494106b5ec69b3802a988127ea2057f1674"
+  },
+  "vital/generation_config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/generation_config.json",
+    "sha256": "69d76e6b0a3b31f0de871f8f5b968957e0532fd9b17214aabf151da4bdbe1804"
+  },
+  "vital/merges.txt": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/merges.txt",
+    "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+  },
+  "vital/model.safetensors": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/model.safetensors",
+    "sha256": "96a85073d80ccd1dfacc08bb775c211d03dd60f4f5bb20f4e11ae467110c4c52"
+  },
+  "vital/preprocessor_config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/preprocessor_config.json",
+    "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4"
+  },
+  "vital/special_tokens_map.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/special_tokens_map.json",
+    "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+  },
+  "vital/tokenizer.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/tokenizer.json",
+    "sha256": "ff61d7c33ad80987e37bcbeeeae7457c8e77d14a43a954fcde7be656fc26d6a9"
+  },
+  "vital/tokenizer_config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/tokenizer_config.json",
+    "sha256": "b2dc5c702e927b2446828520ec674584c55703f9c1c7242a9c972383dd4fd76d"
+  },
+  "vital/vocab.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/vocab.json",
+    "sha256": "87a257b04b17642a0688c98cd1df89c398bda4fee532d6f88b38a659ecb4ac8d"
+  },
+  "clip/config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/config.json",
+    "sha256": "8a09b467700c58138c29d53c605b34ebc69beaadd13274a8a2af8ad2c2f4032a"
+  },
+  "clip/merges.txt": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/merges.txt",
+    "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+  },
+  "clip/model.safetensors": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/model.safetensors",
+    "sha256": "a2bf730a0c7debf160f7a6b50b3aaf3703e7e88ac73de7a314903141db026dcb"
+  },
+  "clip/preprocessor_config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/preprocessor_config.json",
+    "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd"
+  },
+  "clip/pytorch_model.bin": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/pytorch_model.bin",
+    "sha256": "f1a17cdbe0f36fec524f5cafb1c261ea3bbbc13e346e0f74fc9eb0460dedd0d3"
+  },
+  "clip/special_tokens_map.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/special_tokens_map.json",
+    "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf"
+  },
+  "clip/tokenizer.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/tokenizer.json",
+    "sha256": "a83e0809aa4c3af7208b2df632a7a69668c6d48775b3c3fe4e1b1199d1f8b8f4"
+  },
+  "clip/tokenizer_config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/tokenizer_config.json",
+    "sha256": "deef455e52fa5e8151e339add0582e4235f066009601360999d3a9cda83b1129"
+  },
+  "clip/vocab.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/vocab.json",
+    "sha256": "3f0c4f7d2086b61b38487075278ea9ed04edb53a03cbb045b86c27190fa8fb69"
+  },
+  "bert/config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/config.json",
+    "sha256": "f9a38c9ffa369f288c3206d0bf352dfed11d7bdee93aa5b2de6d7fdc7bff7871"
+  },
+  "bert/model.safetensors": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/model.safetensors",
+    "sha256": "28349a5c57338d0dca591bb95de533897c2399095c69d61e09604b46f444a4c4"
+  },
+  "bert/pytorch_model.bin": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/pytorch_model.bin",
+    "sha256": "be24b235c46198938ac269939f8341ae479f2150dc278a342a3ffddefad35434"
+  },
+  "bert/tokenizer.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/tokenizer.json",
+    "sha256": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98"
+  },
+  "bert/tokenizer_config.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/tokenizer_config.json",
+    "sha256": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10"
+  },
+  "bert/vocab.txt": {
+    "path": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/vocab.txt",
+    "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "med_config": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/configs/med_config.json",
+    "sha256": "d8b5029cc3c0124313d17009d043f0701bbe497f3721fa4ceb818720fe665326"
+  },
+  "implementation/baseline/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/__init__.py",
+    "sha256": "ea19a29ea98c6645e3188cfc6c875831c70990eedaa05b62cacc77a1c7cc14ab"
+  },
+  "implementation/baseline/_initialization/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/_initialization/__init__.py",
+    "sha256": "2b8823412b87df14671e85c73168621b66d2519413121be3d42afaa3a33179e1"
+  },
+  "implementation/baseline/_initialization/centered.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/_initialization/centered.py",
+    "sha256": "658fdc516fd25f3c32a1b07b0dcdb6e8917225c41b780e8872953d1c26f38674"
+  },
+  "implementation/baseline/_initialization/factorial.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/_initialization/factorial.py",
+    "sha256": "549942031f5ca8222a7ea9ccb9f1a0fd277b783cbbb6fd4cbd528e7637f8ec29"
+  },
+  "implementation/baseline/_initialization/routes.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/_initialization/routes.py",
+    "sha256": "941cb22d8fb3783a609e89fb08237d90dcfb1429a6091b72ea828a0028f5486d"
+  },
+  "implementation/baseline/centering.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/centering.py",
+    "sha256": "a35790245c2ba56279393f63bfe06e8e32d890a3286901b66ca2fd1cf0b81584"
+  },
+  "implementation/baseline/checkpoint.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/checkpoint.py",
+    "sha256": "c6535d65aa25173cf8a2e2616506d85362c3d1294a541e3dd02ee01aa4790a7b"
+  },
+  "implementation/baseline/components.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/components.py",
+    "sha256": "58ddedf79671f4cf063fa8d898b2bd16ee5aded8661aafef0391c6843a813e35"
+  },
+  "implementation/baseline/config.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/config.py",
+    "sha256": "589fe8933ef4bdf7d699ed12f586de17dd73d234d519e1f562b8fed2a603b7d5"
+  },
+  "implementation/baseline/diagnostics.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/diagnostics.py",
+    "sha256": "9708d1650821ab9e1422e26b6c3fd6063b65b08d1ee3a207b4e91d72621b2fc5"
+  },
+  "implementation/baseline/encoding.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/encoding.py",
+    "sha256": "89f2fc12b11d2ab01c0eaacadfd1618229ec7c7d02a164d41f89fbcf39acd9c0"
+  },
+  "implementation/baseline/evaluation.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/evaluation.py",
+    "sha256": "bff9269fc9a200856a27c9fa8dbdb00636617251e23e114b6f31b555d4237284"
+  },
+  "implementation/baseline/exports.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/exports.py",
+    "sha256": "81deb23a280074bc99f301ec6410cac5c5259a25da61e0d8b4149cf200563883"
+  },
+  "implementation/baseline/film_diagnostics.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/film_diagnostics.py",
+    "sha256": "6a70da79e9812850c09182e610bb941fafb273b44eb089b76a55f1da4c9fdf03"
+  },
+  "implementation/baseline/model.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/model.py",
+    "sha256": "0b067a967aae405002216c81a29060c25a679552e92a68ab48330241f2123fcf"
+  },
+  "implementation/baseline/precision.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/precision.py",
+    "sha256": "7f8cb30e0163e6ed0e1bf909e61e0a23b8ff19aa688817e6f3ed36296e2b8a2e"
+  },
+  "implementation/baseline/preflight.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/preflight.py",
+    "sha256": "a4754f3cc4f7af4cee89f4375496b4eb5b1cf55fe6e84977569c9c3f846731c0"
+  },
+  "implementation/baseline/provenance.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/provenance.py",
+    "sha256": "9a9689e10cd779b1b1b782c7b469bdb2df2457bed85c8dcf827d40dd96dcde4d"
+  },
+  "implementation/baseline/runner.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/runner.py",
+    "sha256": "0efc297ac51007d4c0fbb0c5c7ca3d0cd2a4b6051f0d738dc880b294aa7562cc"
+  },
+  "implementation/baseline/summary.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/baseline/summary.py",
+    "sha256": "1fbe0e8a4077b3859e80797d9cee93434c3d30b0d057d070a0509bfe51ec5496"
+  },
+  "implementation/models/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/__init__.py",
+    "sha256": "eed2b18b24efdf40318cf8d3f707e1e459eb3d06e7248db92df130680a66da8d"
+  },
+  "implementation/models/_seed42_aider.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/_seed42_aider.py",
+    "sha256": "bf51b4bf6552d7a0dbf5cb31b91be84dff6a9004a0583b41dff2c48d11bfef45"
+  },
+  "implementation/models/_seed42_fusion.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/_seed42_fusion.py",
+    "sha256": "775f9abde66a5a5b38d8f503efe84b5f5bd066cb8ec4dd40f25a7f7f95ec34b5"
+  },
+  "implementation/models/_seed42_registry.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/_seed42_registry.py",
+    "sha256": "56a434d248a113d07af89254a9b2c155ecb8781c74a0f6b1a751765c964c32d9"
+  },
+  "implementation/models/aider.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/aider.py",
+    "sha256": "d6c7baa246ef167c24e19d247b87c22a24032b8770eec351386390ca0c002b3e"
+  },
+  "implementation/models/artifact_query.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/artifact_query.py",
+    "sha256": "6ff6e96ab02dff63a0b7eb790cbab3cffb11ee1cd11c5a671cc67ec24f3dd00b"
+  },
+  "implementation/models/backbones/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/__init__.py",
+    "sha256": "276c8b3bc545b22a8e676e82cbc177917a2d7a080c34360a03e9513c3efcbd45"
+  },
+  "implementation/models/backbones/blip.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip.py",
+    "sha256": "d48aa8227faa651f03e1abef2368ae545bcf92ff55f4c01b1a9e7592dc8dfd0a"
+  },
+  "implementation/models/backbones/blip_legacy/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/__init__.py",
+    "sha256": "3daf937092a9b4d1ba84c695c7f2e36a052f650fbcee17fbb164744b206b4ef7"
+  },
+  "implementation/models/backbones/blip_legacy/blip.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/blip.py",
+    "sha256": "682e3769f11f61c1d7b740314076bf69fa7def6443ca54a6118d5bc59c1539df"
+  },
+  "implementation/models/backbones/blip_legacy/blip_pretrain.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/blip_pretrain.py",
+    "sha256": "770c42a52b192872835fda6b6cce480cebaac298a2f3f2da3a672e1a55177112"
+  },
+  "implementation/models/backbones/blip_legacy/med.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/med.py",
+    "sha256": "58d4cab32c83bfa07ff8130c3311bdce63976dcbb0992a4b692b5e2d5742cfe3"
+  },
+  "implementation/models/backbones/blip_legacy/vit.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/vit.py",
+    "sha256": "e2c3d0796fb4752c93702e3fbde65019b35682db490e7acbbbc24a7cdb29b9c4"
+  },
+  "implementation/models/backbones/configuration_intern_vit.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/configuration_intern_vit.py",
+    "sha256": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8"
+  },
+  "implementation/models/backbones/modeling_intern_vit.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/modeling_intern_vit.py",
+    "sha256": "d3e0f68f29e86be1f3e6e101dc45303ec24e5115e0034de101665972576eb348"
+  },
+  "implementation/models/backbones/slowfast.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/slowfast.py",
+    "sha256": "0de641dfe4fc8096dafd0af8c9c0131ba1d05f587c6d70cf44911969ebe9f864"
+  },
+  "implementation/models/backbones/vital.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/vital.py",
+    "sha256": "2b61ded6399f037c58f85283807ea3d04bc65b094472c5b9fcd1bfbe6f04d937"
+  },
+  "implementation/models/blip_temporal.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/blip_temporal.py",
+    "sha256": "110c3b037b22692fa05273ce749cfd5c40b59837c7853f5e0f49a98f2996b594"
+  },
+  "implementation/models/dimension_encoder.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/dimension_encoder.py",
+    "sha256": "6989d372d123ffcd9dba710edd4a7e118bf7dfe327a059be7743af448c2e7e62"
+  },
+  "implementation/models/film.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/film.py",
+    "sha256": "3903e293a6213883e32b7cb135560bcffc877a94372aba2f9aa31bacc0ded725"
+  },
+  "implementation/models/fusion.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/fusion.py",
+    "sha256": "a621687fdfa08842c00a5e5d359d4304f90322ad45d2ae46d67b21f853584d69"
+  },
+  "implementation/models/moe.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/moe.py",
+    "sha256": "76b42ba1fb764dd8ccb662a3d382f8fd808d858a38a4c365541bb34095351331"
+  },
+  "implementation/models/registry.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/models/registry.py",
+    "sha256": "19fd49759e70cede3d3415cc5d7f16d13c2de0b864ec14ed1e4bf481f689bb3d"
+  },
+  "implementation/engine/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/__init__.py",
+    "sha256": "40fd1419be436fbb3c7b557a3d28840dc1195744ee62c7bc9c4fda0f97d53fb6"
+  },
+  "implementation/engine/audit.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/audit.py",
+    "sha256": "14edb9b42ea24f0a3accc0f53bf1e614c1cbaad656a593118d0fb2be1aed6630"
+  },
+  "implementation/engine/checkpoint.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/checkpoint.py",
+    "sha256": "9e0ebad97eedeba9c6d4820323d2b0ff7b8c16cfcd1642767bf8319065e5d4ff"
+  },
+  "implementation/engine/evaluation.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/evaluation.py",
+    "sha256": "e0ef78b975d8053fd89d837d2e749bdbf2eb1e41397708921411b3547d0e78db"
+  },
+  "implementation/engine/io.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/io.py",
+    "sha256": "4af4d24ff46ecea305fa583a0d69d0c5a78f63aef834d9422eb6d8fcc0b789a1"
+  },
+  "implementation/engine/losses.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/losses.py",
+    "sha256": "98da2212d410cb4924bdf208f2f4799711e4dd29f53b57b58f8287b349d1407f"
+  },
+  "implementation/engine/memory.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/memory.py",
+    "sha256": "93dc314a7e281471805db4717d64d10cdd070ca4c50b27527eb9ee91a8a0fe96"
+  },
+  "implementation/engine/metrics.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/metrics.py",
+    "sha256": "7600a4ff36824884cdab0a63415d62124de2dab629c32bd4511f26f79b35b7ea"
+  },
+  "implementation/engine/optim.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/optim.py",
+    "sha256": "1bf5f4c821b8e370f7ede4bd110fa3d16b6e29020fed321e8a6ff9bf9ec958b0"
+  },
+  "implementation/engine/preflight.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/preflight.py",
+    "sha256": "b4a78ca3c7a0b22a6a366047b314e7819b02e382bedd13800e41d86190bb944f"
+  },
+  "implementation/engine/runtime.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/runtime.py",
+    "sha256": "8435e11c06b872249046bacf316df44c5be53d7a0ca629f323116340e7c6cfff"
+  },
+  "implementation/engine/sampling.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/sampling.py",
+    "sha256": "6982d1c4a9eaf18729e1023167be5e02dd96967febff2000afb195c7d0c89b83"
+  },
+  "implementation/engine/trainer.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/trainer.py",
+    "sha256": "7212b8036b8fca40b7e4b0005fdc6a0118617f838a9aafd316500bb58af3a1a7"
+  },
+  "implementation/dataset/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/__init__.py",
+    "sha256": "fe8f77b7acb9adf5a2f573dff975d2aed8879ec28e30e37d1329dba5e6ce40b4"
+  },
+  "implementation/dataset/artifact_features_v3.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/artifact_features_v3.py",
+    "sha256": "f2081dfec4c4c420ec1accf19bcf3b747862e5bfbcf57c31a434d9180598cde6"
+  },
+  "implementation/dataset/artifact_prior.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/artifact_prior.py",
+    "sha256": "41de733852cbabfb5ffa2ef692751b0af64080541bb43b7a61df7608cd5ac22e"
+  },
+  "implementation/dataset/frame_sampling.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/frame_sampling.py",
+    "sha256": "74f2d648b0e0da6c3b2ab7d62c8a6335c9e85cbe39eb3ef3549c80226baaed6c"
+  },
+  "implementation/dataset/joint.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/joint.py",
+    "sha256": "0eb0adfc0ac32dd53515d8481fcf26b6766ac220e47ab1b8887147ffb4633863"
+  },
+  "implementation/dataset/video_dataset.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/video_dataset.py",
+    "sha256": "fef73bd07ed5ed442d8cad6fec0acef8c660732ae65bffdb5f418d7096690c9e"
+  },
+  "implementation/utils/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/__init__.py",
+    "sha256": "0136b3464ef3db6cce8b3c4178dbadcd8c99ac940b437fa38d3951d7753956cc"
+  },
+  "implementation/utils/config.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/config.py",
+    "sha256": "0019a26888d2289c8870934182200b4f41a144c07ac3f8f151f2eb47750f03d2"
+  },
+  "fixed/depth2_video_adaptive_fixed_position.pt": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/depth2_video_adaptive_fixed_position.pt",
+    "sha256": "84f07fdfa7d0571b836429780351d8026c419322ad89252c484ab41c21a49189"
+  },
+  "fixed/depth2_video_adaptive_fixed_position.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/depth2_video_adaptive_fixed_position.json",
+    "sha256": "09f6ed05572ad4d82db1d14cc3eab36708da92ee8b765fb3af3963c27bf85dc7"
+  },
+  "fixed/config.yaml": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/robustness/depth2_cross_branch_shared_expert_multiseed_10splits_seed42/split_01/config.yaml",
+    "sha256": "750a05bcf2b32946c2ae2bc3a379a8c80c3dc26b0d4d70303ec7e35b6361309a"
+  },
+  "fixed/preflight.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/robustness/depth2_cross_branch_shared_expert_multiseed_10splits_seed42/split_01/preflight.json",
+    "sha256": "8fff27a4a677639f862a1546b9cac8274aaed00473a347eed93b0065cddf8e36"
+  },
+  "fixed/task_tables.json": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/film_transformer_task_schedule_depth_seed42/multitask_depth2/encoding/task_tables.json",
+    "sha256": "19422a9cc43e08161cd7e221f5ea944380cddf88647696b7c9b3aeeea224e5e2"
+  },
+  "implementation/ablations/depth2_video_adaptive/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/__init__.py",
+    "sha256": "d0527e5f637b7e36f6c33539a35d2ab88d29b160ab0f72f6689ec3c68f729d1d"
+  },
+  "implementation/ablations/depth2_video_adaptive/checkpoint.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/checkpoint.py",
+    "sha256": "dc497c98e1e50f1a3add02dd4c931053631f003c588e0dd80fd8909b914bcd5b"
+  },
+  "implementation/ablations/depth2_video_adaptive/config.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/config.py",
+    "sha256": "1f457feaaee079daf14187e94456f58810b5b0829f7be556d4867d9808bc5681"
+  },
+  "implementation/ablations/depth2_video_adaptive/data.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/data.py",
+    "sha256": "4d66cbf1e6611a4a6bca2260f1e820c728f1fca9d15425a7aa4cc5f78ae09d17"
+  },
+  "implementation/ablations/depth2_video_adaptive/diagnostics.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/diagnostics.py",
+    "sha256": "d8ca2e12a377aa01fa87f22048010a749a35e299b97c377a9d5046825f268b81"
+  },
+  "implementation/ablations/depth2_video_adaptive/evaluation.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/evaluation.py",
+    "sha256": "f57d2b91d889a1186b50caa4c96b5553a5b00a6d26b036d71ec37fd66a27a8fa"
+  },
+  "implementation/ablations/depth2_video_adaptive/exports.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/exports.py",
+    "sha256": "97dcb4fb5b975804a6d7324cc8dc0f89aab15bac85b8b9d203e59e813bb5a461"
+  },
+  "implementation/ablations/depth2_video_adaptive/model.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/model.py",
+    "sha256": "4823659b018ae175eae53e648733b8c324dbda162017a03c562bc83104aed651"
+  },
+  "implementation/ablations/depth2_video_adaptive/optim.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/optim.py",
+    "sha256": "0806f1a747936e243d2b0723e80e270406fb64fde5ad14188b8908b4ccfb3763"
+  },
+  "implementation/ablations/depth2_video_adaptive/position_snapshot.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/position_snapshot.py",
+    "sha256": "f0c2e0487ae9c4cf2fe70fd5d6df2b53d3b0a03d743ba620c796d0b4c0f88753"
+  },
+  "implementation/ablations/depth2_video_adaptive/preflight.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/preflight.py",
+    "sha256": "f6f2093e766ba5681f61efbea83b0f8a0624b5a69b9f6e11e4806b68e14015cf"
+  },
+  "implementation/ablations/depth2_video_adaptive/provenance.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/provenance.py",
+    "sha256": "f4bf5fe6a6e6f89b46f685352186c05c9da18a3678d45ed18ebdca0b9910a6ea"
+  },
+  "implementation/ablations/depth2_video_adaptive/runner.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/runner.py",
+    "sha256": "9f09b4be8349312e16f9d0078e213b1023a28c45f325f4543afe7f4489844300"
+  },
+  "implementation/ablations/depth2_video_adaptive/summary.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/summary.py",
+    "sha256": "816791352b774eee06c253a2e8bcbe9114456a0c7b19ba83f0c56d3787a3ec5f"
+  },
+  "implementation/ablations/depth2_video_adaptive/task_snapshot.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_video_adaptive/task_snapshot.py",
+    "sha256": "354c18ff9d024933f741ae7ecf6a7a3d3b1b131a4bfc1405be4635af792a3d18"
+  },
+  "implementation/ablations/depth2_targeted_variants/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_targeted_variants/__init__.py",
+    "sha256": "7fc178bb63f941c13bbf4851f21f62702dd59893b10e3d6a9aef377dc54bed79"
+  },
+  "implementation/ablations/depth2_targeted_variants/checkpoint.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_targeted_variants/checkpoint.py",
+    "sha256": "c4f16791511b445ea6be19e9a71a96fb0cd9666e0109ef512c65554b16a98ce7"
+  },
+  "implementation/ablations/depth2_targeted_variants/config.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_targeted_variants/config.py",
+    "sha256": "9f30ae8828d1f7592ddbe3659b1711ac1bcb773f7a52ac76460384f1851963a4"
+  },
+  "implementation/ablations/depth2_targeted_variants/evaluation.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_targeted_variants/evaluation.py",
+    "sha256": "48fff68cf15a97dbbde72bb8af0c222b857231de28ef19c39b0a2341852f2121"
+  },
+  "implementation/ablations/depth2_targeted_variants/model.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_targeted_variants/model.py",
+    "sha256": "2b50aee7a0bf439c1d158c8ea2fac8259900523d748f2a1746fd890a1a9d17fd"
+  },
+  "implementation/ablations/depth2_targeted_variants/runner.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_targeted_variants/runner.py",
+    "sha256": "97235a55dbff630414010d0796944b6dccae3ed3d55910e13e6f4bbc427a2162"
+  },
+  "implementation/ablations/depth2_targeted_variants/summary.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_targeted_variants/summary.py",
+    "sha256": "d3ca216f921a6444edc53b0c48866d592039c7ba4e429194626caf49329c80e4"
+  },
+  "implementation/ablations/depth2_cross_branch_film_v2/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_cross_branch_film_v2/__init__.py",
+    "sha256": "368d3de85be47c36086450e5ab11fa3400a3102668645ec1ba82802de43d6e6c"
+  },
+  "implementation/ablations/depth2_cross_branch_film_v2/config.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_cross_branch_film_v2/config.py",
+    "sha256": "e5699f9b8929d82680b4bac71a6b34c7d8b4d8ae4a0637c4118b0f58d2372a21"
+  },
+  "implementation/ablations/depth2_cross_branch_film_v2/model.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_cross_branch_film_v2/model.py",
+    "sha256": "66bdc06fd65e1cfe17caf982c0b4b383d4cb982b6dd586df8493a3ed3892ee9d"
+  },
+  "implementation/ablations/depth2_cross_branch_film_v2/optim.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_cross_branch_film_v2/optim.py",
+    "sha256": "7cc118591780cc83c5936a8f7d8a05017164ba9325eac98439fc4d9b8d10758b"
+  },
+  "implementation/ablations/depth2_multiseed_combined/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_multiseed_combined/__init__.py",
+    "sha256": "23f59e55fbfb39ee4fb32b0c91a82f8abe187cc9e0f48fc774857b07cdfdb9af"
+  },
+  "implementation/ablations/depth2_multiseed_combined/checkpoint.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_multiseed_combined/checkpoint.py",
+    "sha256": "6e74363d0e7999925a32b5386842f09d52f4e25dab8fa4b4497f815ce3aaf4b3"
+  },
+  "implementation/ablations/depth2_multiseed_combined/config.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_multiseed_combined/config.py",
+    "sha256": "07ea632de4f97d9d3befe36eb96e153125a15882e7b459fb233a75f9a8d70aa5"
+  },
+  "implementation/ablations/depth2_multiseed_combined/manager.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_multiseed_combined/manager.py",
+    "sha256": "b5d4b1c108e9afe351ca82e44fc6d6d18c8a5fa8f7fdcbbf370de95e6d688ba5"
+  },
+  "implementation/ablations/depth2_multiseed_combined/model.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_multiseed_combined/model.py",
+    "sha256": "df116efdee74dcfc0b2efa8dc4e04e5404c453cdb5aa5b5186db47c4e3e184ff"
+  },
+  "implementation/ablations/depth2_multiseed_combined/runner.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_multiseed_combined/runner.py",
+    "sha256": "0683eafb4d506739029d57be41fa777e5eff3453f9dff2fd0f3ea33f47f2d511"
+  },
+  "implementation/ablations/depth2_multiseed_combined/summary.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_multiseed_combined/summary.py",
+    "sha256": "33447bdafe75dc107c3c98f66ac6bf6adc1b4a381ab0ae13aa4d5b486cd76125"
+  },
+  "implementation/ablations/depth2_combined_original_split/__init__.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_combined_original_split/__init__.py",
+    "sha256": "1554f581612b3c980e12f8d6483eb500b5f1dfdb40d8f352d5adff2f23435d61"
+  },
+  "implementation/ablations/depth2_combined_original_split/checkpoint.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_combined_original_split/checkpoint.py",
+    "sha256": "2ab2f44543c6bd49020d2732ca43f9d6051ed8e6fda36e8caa184b0663b58512"
+  },
+  "implementation/ablations/depth2_combined_original_split/config.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_combined_original_split/config.py",
+    "sha256": "acec2df37edff8288acb44a5a8b81bf19c1c2461ffccee793a746299a201e474"
+  },
+  "implementation/ablations/depth2_combined_original_split/runner.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_combined_original_split/runner.py",
+    "sha256": "12b330c856004b53e1a8be323eb5724560d6b10cbdc0068fadd5036c7b45fb85"
+  },
+  "implementation/ablations/depth2_combined_original_split/summary.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/ablations/depth2_combined_original_split/summary.py",
+    "sha256": "799f7cf56cbe3aaf7dc8775ac6334b161a5e4a40fe6c7c360bf649c24f3fffdc"
+  },
+  "implementation/scripts/depth2_combined_original_split.py": {
+    "path": "/hdd/u202511081000084/IMC_QZL/AIDER/scripts/depth2_combined_original_split.py",
+    "sha256": "de508d6973b3ff25000cf4998fd982777eab924d42806fdb6845b3910d0b3940"
+  }
+}

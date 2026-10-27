@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "initial_state_sha256": "5e0e46ce0a796fca0de8ebaefe5f50c91be34e98bd84af414f3cf3e23b650f10",
+  "parameters": {
+    "total": 888552507,
+    "trainable": 247594099,
+    "modules": {
+      "vital_backbone": {
+        "total": 304012288,
+        "trainable": 0
+      },
+      "motion_backbone": {
+        "total": 33644488,
+        "trainable": 0
+      },
+      "tv_backbone": {
+        "total": 445278720,
+        "trainable": 141977088
+      },
+      "technical_expert": {
+        "total": 2365955,
+        "trainable": 2365955
+      },
+      "technical_projector": {
+        "total": 1313024,
+        "trainable": 1313024
+      },
+      "motion_projector": {
+        "total": 787712,
+        "trainable": 787712
+      },
+      "motion_position_embedding": {
+        "total": 65536,
+        "trainable": 65536
+      },
+      "tv_projector": {
+        "total": 1838336,
+        "trainable": 1838336
+      },
+      "dimension_encoder": {
+        "total": 0,
+        "trainable": 0
+      },
+      "fusion": {
+        "total": 94913391,
+        "trainable": 94913391
+      },
+      "blip_temporal": {
+        "total": 2363904,
+        "trainable": 2363904
+      },
+      "alpha_gate": {
+        "total": 769,
+        "trainable": 769
+      },
+      "video_summaries": {
+        "total": 1968384,
+        "trainable": 1968384
+      }
+    }
+  },
+  "optimizer_groups_and_order_exact": true,
+  "construction_rng_matches_legacy": true,
+  "historical_best_epoch": 8,
+  "historical_best_sha256": "9a78f470014e9a15381b57b290781400e4efd10270c7b40b04073eb72de47d9e",
+  "historical_checkpoint_all_saved_tensors_exact": true,
+  "historical_best_fixed_feature_prediction_delta": {
+    "fp32": 0.0,
+    "bf16": 0.0
+  },
+  "new_checkpoint_reload_prediction_delta": 0.0,
+  "direct_model_bases": [
+    "Module"
+  ],
+  "no_training_or_gpu_job_started": true
+}

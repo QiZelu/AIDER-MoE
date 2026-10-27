@@ -1,0 +1,54 @@
+{
+  "complete": true,
+  "package_root": "/tmp/aider_main_export_build/package",
+  "file_hashes_checked": false,
+  "initial_parameters_and_rng_match": true,
+  "checkpoints": {
+    "best": {
+      "epoch": 7,
+      "sha256": "dbaba2eac7735c1c71930e689bfd8a8a7f87fe1f27f82129b230d7ca332212e7",
+      "exact_tensor_reload": true,
+      "compact_state_sha256": "25f78da08680648557eebe852c804c99e90b6b3133b07e894bf0b17900aed842",
+      "complete_blip_text_tensors": 317,
+      "raw_feature_predictions": [
+        0.4133530855178833,
+        0.43972310423851013,
+        0.4407763183116913,
+        0.4252125322818756
+      ],
+      "four_private_heads": 4,
+      "shared_expert_pools": 2
+    },
+    "last": {
+      "epoch": 10,
+      "sha256": "e5d5f1d4a911e56d51f3490af61cf642eecc20b0cdc7cc73e68d8c602d866fac",
+      "exact_tensor_reload": true,
+      "compact_state_sha256": "8fe254afae6ebe4bbd6ece40de04727162cb5d29a1f6bf24151f71b180adad09",
+      "complete_blip_text_tensors": 317,
+      "raw_feature_predictions": [
+        0.40928488969802856,
+        0.43145322799682617,
+        0.4359629452228546,
+        0.41659921407699585
+      ],
+      "four_private_heads": 4,
+      "shared_expert_pools": 2
+    },
+    "epoch9": {
+      "epoch": 9,
+      "sha256": "3763ffd537b1e62308258a18985e84c47b818f4eb4220b96cf03353229398824",
+      "exact_tensor_reload": true,
+      "compact_state_sha256": "219506a14ada56e240ff6ca6d476b498a9c94a0f83ebd7cad4c2ec2b0ec3687e",
+      "complete_blip_text_tensors": 317,
+      "raw_feature_predictions": [
+        0.4083762466907501,
+        0.4280926585197449,
+        0.4341605007648468,
+        0.4173186123371124
+      ],
+      "four_private_heads": 4,
+      "shared_expert_pools": 2
+    }
+  },
+  "verification_scope": "CPU full-backbone construction; exact complete checkpoint tensor reload; four-task raw-feature forward. No training or GPU jobs launched."
+}

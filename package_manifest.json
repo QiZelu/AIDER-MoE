@@ -1,0 +1,1783 @@
+{
+  "format": "aider_private_task_no_clip_export_v1",
+  "source_root": "/hdd/u202511081000084/IMC_QZL/AIDER",
+  "pretrained_root": "/hdd/u202511081000084/IMC_QZL/pretrained_models",
+  "bundled_pretrained": true,
+  "run_dir": "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42",
+  "video_root": "/hdd/u202511081000084/IMC_QZL/My_Datasets/AIGV-DB/MOS/MOS_Videos",
+  "checkpoints": {
+    "best": {
+      "path": "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best.pt",
+      "sha256": "dbaba2eac7735c1c71930e689bfd8a8a7f87fe1f27f82129b230d7ca332212e7"
+    },
+    "last": {
+      "path": "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last.pt",
+      "sha256": "e5d5f1d4a911e56d51f3490af61cf642eecc20b0cdc7cc73e68d8c602d866fac"
+    },
+    "epoch9": {
+      "path": "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/epoch9.pt",
+      "sha256": "3763ffd537b1e62308258a18985e84c47b818f4eb4220b96cf03353229398824"
+    }
+  },
+  "package_only_modified_files": [
+    "engine/checkpoint.py",
+    "engine/private_task_diagnostics.py",
+    "evaluate.py",
+    "infer.py",
+    "train.py",
+    "utils/config.py",
+    "utils/private_task_modules.py",
+    "utils/provenance.py"
+  ],
+  "files": {
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best.pt": {
+      "sha256": "dbaba2eac7735c1c71930e689bfd8a8a7f87fe1f27f82129b230d7ca332212e7",
+      "size": 1021777282,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best.pt",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_evaluation.json": {
+      "sha256": "6569116da3080a1a88cad7a1e774936b3a36a6fb6761e23e0d50e8d3b70cae54",
+      "size": 277465,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_evaluation.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_gap_diagnostics.json": {
+      "sha256": "bc7797d600c1503f6a855dc0d56215942537404770073831573b1148dcf18aed",
+      "size": 43187,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_gap_diagnostics.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_predictions_long.csv": {
+      "sha256": "634815ac87850f03c4ee2bd2fef8d26b3f4e4d198d79da0d6700c87bd1ccf34b",
+      "size": 208360,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_predictions_long.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_predictions_wide.csv": {
+      "sha256": "841bd44ca6566089ed8726ae14dfed8ebd488f229125eeb080e5c369708d2234",
+      "size": 42291,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_predictions_wide.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_routing.json": {
+      "sha256": "e357eea01e9a5afac811d665fc5bed331340e94328dc74be5db008d6677397ab",
+      "size": 11840708,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/best_routing.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/comparison_deltas.csv": {
+      "sha256": "f570fd1fef27dda42f61472a979b919bf5f03a58193dd1421a3f562c0de60166",
+      "size": 3255,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/comparison_deltas.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/comparison_metrics.csv": {
+      "sha256": "e87286b40b25000d3fa67339ecc1267d8524c254098f021e2d16a3a53d7c65fe",
+      "size": 2357,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/comparison_metrics.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/config.yaml": {
+      "sha256": "eb60b8305d67a24be919d840acc50814a606d1a1aa5927168810bb3ac25c8fa7",
+      "size": 9073,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/config.yaml",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/data_audit.json": {
+      "sha256": "7953698432fa7dd8225716ef7c7b61c2da75c32e62890dd4c966d8bb53d9ff93",
+      "size": 517,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/data_audit.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/encoding/centered_normalized_cosine.csv": {
+      "sha256": "24f575da95bd7c56cd67659be3a3afe09dc3ba7f90fdc6f177794814601392c5",
+      "size": 384,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/encoding/centered_normalized_cosine.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/encoding/original_cosine.csv": {
+      "sha256": "f9af5f3d48e639e72385fa788b4a4572ea0ca3f4a64e8327f564dad1a04d9a2e",
+      "size": 339,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/encoding/original_cosine.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/encoding/original_input_initial_routes.json": {
+      "sha256": "b3c62cff6391bd9fe6946b861fba491bf96da8fef61398914ade745338210f19",
+      "size": 7446,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/encoding/original_input_initial_routes.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/encoding/task_tables.json": {
+      "sha256": "cbd01b9827bc280dd6c5a7ee7914b7b01804e373707bc263faa8fc9ff4d571a9",
+      "size": 197689,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/encoding/task_tables.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/epoch9.pt": {
+      "sha256": "3763ffd537b1e62308258a18985e84c47b818f4eb4220b96cf03353229398824",
+      "size": 3065136390,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/epoch9.pt",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_01.json": {
+      "sha256": "c9759c67e427026c069735e573ca999b5e501cbdaa8e8167be7305564445ecac",
+      "size": 388,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_01.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_01_by_task.json": {
+      "sha256": "0b0780c31b370f3238da16e596906e8386fcb43d5e34ac7927872de4540f366b",
+      "size": 4179,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_01_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_01_task_coefficients.json": {
+      "sha256": "86f4df476d14c59fa3e78845a73e10ba9344038a4167e03f57f186c23a950264",
+      "size": 402086,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_01_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_02.json": {
+      "sha256": "552e2b586184789695097631bb42778c9d866b08c0e25ddafcf3abc108ca483f",
+      "size": 391,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_02.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_02_by_task.json": {
+      "sha256": "45cfabf1109dec17800d9e041a91cff8f366809a34594e097da4a9af18654438",
+      "size": 4170,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_02_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_02_task_coefficients.json": {
+      "sha256": "035d24d90e57c578e253b71383f3012cf4bf2dc9ae29e2544e556fc0ea7197e6",
+      "size": 401045,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_02_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_03.json": {
+      "sha256": "2a80e26f22f30e7bd4a450a9f3e6344ff8a066f51bc3357861da6faf788b06df",
+      "size": 393,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_03.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_03_by_task.json": {
+      "sha256": "e615112d3856b45576c2beb6488eed3f69f1db509f2c460aa4579c009762ada0",
+      "size": 4155,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_03_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_03_task_coefficients.json": {
+      "sha256": "478804ccaef04a6c47b05a96efcded348cee2b45bac230cfacec4773fc3576eb",
+      "size": 400363,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_03_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_04.json": {
+      "sha256": "853cb3a6aaa56fae9f7122d6b113d12f4cd3d1978c771eb8d38ba29dc71c6cff",
+      "size": 394,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_04.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_04_by_task.json": {
+      "sha256": "009564bc9c00a5ef1f0c4160b43dabdff1af36ff6d693ccb887aa41265267e3f",
+      "size": 4139,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_04_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_04_task_coefficients.json": {
+      "sha256": "230decb066d7ba4477759ee6a0f135f2783103ce183be30c74f22c1003a96f46",
+      "size": 399849,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_04_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_05.json": {
+      "sha256": "a92bc5726e90755ffbb3b81375100b61e75c94c9c81ba856060124d5659d324d",
+      "size": 392,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_05.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_05_by_task.json": {
+      "sha256": "bf13f17bd1d949921895b6e821c2b72464f272c8b85ebb3ba0ab35b3ef6d9994",
+      "size": 4152,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_05_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_05_task_coefficients.json": {
+      "sha256": "8fa9f1ab8b0d964c95368d0441dd6de40c87fe4d0a67488cf1d10658dcb2d9a2",
+      "size": 399619,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_05_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_06.json": {
+      "sha256": "7849c2697c9f757c9600e0646ded6c3d86ea50af1780d75e59110ea75b1dd0aa",
+      "size": 393,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_06.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_06_by_task.json": {
+      "sha256": "b5354bfad145803d0352818686de0a6490f0be6e6074175d0901d6141efb54cd",
+      "size": 4151,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_06_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_06_task_coefficients.json": {
+      "sha256": "c130df706c22134677c51651c59d5f201214ea03aa08fb4f15f3baaa532aa73e",
+      "size": 399268,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_06_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_07.json": {
+      "sha256": "7c80a0ea5e8eb7c8f252d5ae6329d837309f1b851f880ba61098503946933da2",
+      "size": 392,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_07.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_07_by_task.json": {
+      "sha256": "ad15bc5b9094727f047e500d2051dd562cbdff952b305fe15be72157e921b9a4",
+      "size": 4139,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_07_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_07_task_coefficients.json": {
+      "sha256": "2aab036bb9f077efc52d822f9df9e291db19162fd0e7665a5a4ae8780a5c7f8e",
+      "size": 399155,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_07_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_08.json": {
+      "sha256": "c13c06e37e42637f403ca6109339f08cdf555599c455f16008c4e9a294d4e16e",
+      "size": 394,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_08.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_08_by_task.json": {
+      "sha256": "f76def9d17a8d64e2d039bd62d9f48a371c544689e0c963bbdfdd7195bb3b867",
+      "size": 4147,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_08_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_08_task_coefficients.json": {
+      "sha256": "e69e0ce54d14e4b2749169a75093d762d569dc0e9efdefc502d46007c773a2a0",
+      "size": 399149,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_08_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_09.json": {
+      "sha256": "43ba32afb3d519643ab044a84f1db4cf771c77d232ad1bc73f80b11e59654676",
+      "size": 394,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_09.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_09_by_task.json": {
+      "sha256": "836b1f70809a7c2361bc697ee0ea3753b34b27c4c68e33dc7410372d91869caa",
+      "size": 4150,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_09_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_09_task_coefficients.json": {
+      "sha256": "e8ef80a68bd584eb062e1609fd11208981da37e12ae974610eff51f925b89ae6",
+      "size": 399145,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_09_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_10.json": {
+      "sha256": "60f0e80e2858dea3d785bd44b6b1d944cc49cd419090be38d3b70d7978ad87f4",
+      "size": 392,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_10.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_10_by_task.json": {
+      "sha256": "ccb9762497f60732ef07e5315589e7a2651a5a200dc2997fe60fc99006ab0c98",
+      "size": 4153,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_10_by_task.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_10_task_coefficients.json": {
+      "sha256": "66baf839c0765f25446290f765cd0d3206498f1b99f1924dd63c366c06f41e0c",
+      "size": 399219,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/epoch_10_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/initial_task_coefficients.json": {
+      "sha256": "d99e96d830ed48921cd960254f9b0393f557a07dc791f2876bc363587e003f55",
+      "size": 185658,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/film/initial_task_coefficients.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_01.json": {
+      "sha256": "a9163b59b51374ae45318ddc932fa1777ddbc28bcca74d65023ce2c68f3db8e4",
+      "size": 594143,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_01.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_02.json": {
+      "sha256": "38fbf53efda216d5e22cb4aa0e0e7136f82104cdb06ecc8e315ca865f21cd60d",
+      "size": 596523,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_02.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_03.json": {
+      "sha256": "85f277314e28c12eece790ea1dc787fb22aed277457f49edc508e781b72fc334",
+      "size": 594957,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_03.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_04.json": {
+      "sha256": "9ff87c3965e40a8933ff030d262811b5c172d21883fa7f8ab1583127d6ce4634",
+      "size": 596657,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_04.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_05.json": {
+      "sha256": "603c21701f1a889b9ebd651502a4d5211e0ded8e98ce288e8cdb48ce0ba1425a",
+      "size": 596457,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_05.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_06.json": {
+      "sha256": "35f229e44f17f1702b962884244e28a9f3a08ed50504134424e8533c0b66d507",
+      "size": 596925,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_06.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_07.json": {
+      "sha256": "82466f304c58769b3fc5015bcede46ba45e14011fc312f8bb4f093afbbc564ae",
+      "size": 596080,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_07.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_08.json": {
+      "sha256": "1a5ebadf57a78898b5fd04bf1a4d9c1d6df3627a7f3d20bdcb3ffb02c848e657",
+      "size": 599521,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_08.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_09.json": {
+      "sha256": "7163e08fbfaa5c1238d16ed982f1a943671ca7171abfbb55f2ed7ec9e83ef7f0",
+      "size": 599148,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_09.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_10.json": {
+      "sha256": "b9c659888ffb2f78823df41bde6bdf08b7f8a276ff4327a2556540393d151bc2",
+      "size": 598768,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/gradients/epoch_10.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/history.json": {
+      "sha256": "423fa646201e61b408a44d12a19db6932e4f6f68854afa3450260f160d80dbfe",
+      "size": 11676,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/history.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/initialization_audit.json": {
+      "sha256": "26da23ea820727f0e1c3f12f05bcdd123fabbd02b636bb28089f8075db2864e9",
+      "size": 1317,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/initialization_audit.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last.pt": {
+      "sha256": "e5d5f1d4a911e56d51f3490af61cf642eecc20b0cdc7cc73e68d8c602d866fac",
+      "size": 3065136390,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last.pt",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_evaluation.json": {
+      "sha256": "ee05157f1c6ad5b4a508f3435efa24758a7db689435d3abd88d4f1fb2a37adc1",
+      "size": 277508,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_evaluation.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_gap_diagnostics.json": {
+      "sha256": "f57cd05d29226228b6f1ec06513341159ae4170656a8ca7f6d75ddec838b8e64",
+      "size": 43182,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_gap_diagnostics.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_predictions_long.csv": {
+      "sha256": "9db48f22c57c4b84cb0b6bda6852842085948d4f9a7b76427ec1a61f042ec41b",
+      "size": 208398,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_predictions_long.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_predictions_wide.csv": {
+      "sha256": "9cb309d8c5f58d7428a26aa45e65df90945b5b10b3765597734e5daf83b21a27",
+      "size": 42329,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_predictions_wide.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_routing.json": {
+      "sha256": "05ea26d47fc0a66392c8e6e5e0e98db1deb0b3d2bef21a7ec87011e918704bbb",
+      "size": 11843249,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/last_routing.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_01.json": {
+      "sha256": "4878c8a65e26ba0632000e6b544e87eff9e2c32f39a44f22cab698aa1eeacfde",
+      "size": 12983,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_01.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_01_records.json": {
+      "sha256": "3bc1cb99db31363aca97da989e2c5c55197d30d8a6b54381d25f2febe7d162fa",
+      "size": 11940760,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_01_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_02.json": {
+      "sha256": "930bbdf5f90893df16e0260956c09aafc145e973430780c04234b07840be5412",
+      "size": 12989,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_02.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_02_records.json": {
+      "sha256": "db16d4a74a7effea33b0b36c1475ca2e2da62bb4cfe9e12dd18d2ee3a56dfbb0",
+      "size": 11869537,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_02_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_03.json": {
+      "sha256": "09a57ab7f04af35c43ae3d472f8ab73458c9c2ea8596d422d310b747cd45d2f5",
+      "size": 12983,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_03.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_03_records.json": {
+      "sha256": "e1164c4c4a1825df9512691c82150d593bc0bbe6aefb82d0d8c4d7bac65362d8",
+      "size": 11852668,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_03_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_04.json": {
+      "sha256": "ce97ab2d0e107dcbce066fae60fc498217d7437a64d30915bddb47a0c1b71fa6",
+      "size": 12988,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_04.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_04_records.json": {
+      "sha256": "b225925f1b72e48cecf529219d7d6bce0d5311a18e19010976f14558657ea81d",
+      "size": 11855253,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_04_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_05.json": {
+      "sha256": "e85660e3e68a24048d415b0a1686ee8fbf2e8ab6b82ee2188cc9688c5361b7d6",
+      "size": 12983,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_05.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_05_records.json": {
+      "sha256": "ef173cc8f0052de1a2dcdcab115c5c349d4292808d3bff7707d2c60ff6a32347",
+      "size": 11839507,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_05_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_06.json": {
+      "sha256": "f85138758de5e28c840e01e96c63a16523a2b6c98710350d8c9c97401ebc45ca",
+      "size": 12985,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_06.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_06_records.json": {
+      "sha256": "52ed5ee3a88aa5bf4e47f76990a8eadedc8029be5e8f5afc03c11282db765bca",
+      "size": 11839887,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_06_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_07.json": {
+      "sha256": "b3101f864381d800cc66e890233fb46edf2d347da79aa004a2fd2e01053e160f",
+      "size": 12988,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_07.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_07_records.json": {
+      "sha256": "e357eea01e9a5afac811d665fc5bed331340e94328dc74be5db008d6677397ab",
+      "size": 11840708,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_07_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_08.json": {
+      "sha256": "2171329bcd877c64019721db410e4e300b0dcb71a1b6c6e460048a9a1e57d81b",
+      "size": 12982,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_08.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_08_records.json": {
+      "sha256": "5fc5e6575df4f74c5490ee15844c3d38046c54c0a12e46d838a06bfa6fa64175",
+      "size": 11838972,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_08_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_09.json": {
+      "sha256": "96d0cc5eb707a0dcea50137748960a79cd82b6782ab5e0af62098b2391addc7a",
+      "size": 12980,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_09.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_09_records.json": {
+      "sha256": "a79aa92129d00012742f1a0e9178777543efa74dc3b49c38bed6db42e5f07bd7",
+      "size": 11844162,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_09_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_10.json": {
+      "sha256": "a10b811efb74ee2da50c3867e035ab79977baacabf235ed10867d862af696e18",
+      "size": 12986,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_10.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_10_records.json": {
+      "sha256": "05ea26d47fc0a66392c8e6e5e0e98db1deb0b3d2bef21a7ec87011e918704bbb",
+      "size": 11843249,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/epoch_10_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/initial.json": {
+      "sha256": "8b3c12d66d108aaf5ec9f43f25c74c9494ecbc93c2947a05b74860371811bdff",
+      "size": 9082,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/moe_routing/initial.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/parameters.json": {
+      "sha256": "b8d22cb75fb0fb108f449c7c0d2169c6c99f21d3546abc617a9302c07f611037",
+      "size": 1118,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/parameters.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/preflight.json": {
+      "sha256": "791627f36ade9eb8b3785fe34c0f27e906b902df10fe36618acf18b84ade8110",
+      "size": 10503,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/preflight.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/process_memory.json": {
+      "sha256": "7800a6f257e60f40ddac14e44aafa19f7ca540249a70a45d39e0fb7370594745",
+      "size": 408,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/process_memory.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_01.json": {
+      "sha256": "155a462b7a00b5935b68d46fa27acce4f11bb0b45890925a22a9a895fe282c5d",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_01.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_02.json": {
+      "sha256": "a45bac850793ba32b06ac96e1667c85b194710b9623a5727dc1d7435cd81c712",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_02.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_03.json": {
+      "sha256": "c395429e0707ba6b9b76ba3a6917915c3c33dc6210174d813e6e584533e0496f",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_03.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_04.json": {
+      "sha256": "e4e687a9319668bb02640234204e7c9de0c95abec1201b04e087c94c239a74c2",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_04.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_05.json": {
+      "sha256": "4ee56e4a5114cbbd9b2f92b13fe8eb63a2d42ce8c2b3930454749938acdf8906",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_05.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_06.json": {
+      "sha256": "b1f40ba17a938dd8598e4e2b244a440a247f9b7fb41ba166a450d9c8c514d092",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_06.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_07.json": {
+      "sha256": "7fd5849c256e0b0629af3588ae676e128fdd7ff064a35f553080e17ed5828382",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_07.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_08.json": {
+      "sha256": "149db02de2e0fae9525779147a7ecc3e298c08f949f9cac166659c7c75697a44",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_08.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_09.json": {
+      "sha256": "f05af5c190a449e4467dfc29aea13a735d4dccd6a483ad51f100381dbc1fad47",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_09.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_10.json": {
+      "sha256": "0c23c1cc1e44079bd67ed55ee54affdacf53ee58df20b38181bfbcac7060de14",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sampling/epoch_10.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sources.json": {
+      "sha256": "a5d2dc58568c856b72e83b87e66dc58e849dd6939f55bd1a6e511d0f5fbba4a9",
+      "size": 20838,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/sources.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/status.json": {
+      "sha256": "56eea3e295bcaa692bd158a159b0107a28c0f0cee01abb1a3acee466f4e72dea",
+      "size": 112,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/status.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/summary.json": {
+      "sha256": "6cb88ebf7704619ee8b9bd5753173dbf05459d4f47c7c3869d0d3f18da0d9ad3",
+      "size": 612,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/summary.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/task_score_diagnostics.json": {
+      "sha256": "551e63a2e34d3df1440e88702d1acc5e5282bd1770f5e6b9a5f978b77c0faef9",
+      "size": 469627,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_task_modules_no_clip_seed42/task_score_diagnostics.json",
+      "unchanged": true
+    },
+    "pretrained_models/model_large.pth": {
+      "sha256": "f39dab16712aa8d3ed4acb774f0a691d7ddaa7ef6d9c02d395faa852776bb734",
+      "size": 3894199750,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/model_large.pth",
+      "unchanged": true
+    },
+    "pretrained_models/slowfast.pth": {
+      "sha256": "b7f52bcb2e4f45c5a32cafbecfbdc3bd26982aeef5a2127491495dd8de595210",
+      "size": 138796269,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/slowfast.pth",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/added_tokens.json": {
+      "sha256": "e66b6bc948dec3421f01a8986f31632cf8d556aaa89f7b39c183b3dd4b5b2c83",
+      "size": 790,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/added_tokens.json",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/config.json": {
+      "sha256": "534d71b3644fdf7bc169d0154a91d494106b5ec69b3802a988127ea2057f1674",
+      "size": 6206,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/config.json",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/generation_config.json": {
+      "sha256": "69d76e6b0a3b31f0de871f8f5b968957e0532fd9b17214aabf151da4bdbe1804",
+      "size": 69,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/generation_config.json",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/merges.txt": {
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "size": 1671853,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/merges.txt",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/model.safetensors": {
+      "sha256": "96a85073d80ccd1dfacc08bb775c211d03dd60f4f5bb20f4e11ae467110c4c52",
+      "size": 678794690,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/model.safetensors",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/preprocessor_config.json": {
+      "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4",
+      "size": 287,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/preprocessor_config.json",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/special_tokens_map.json": {
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "size": 613,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/special_tokens_map.json",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/tokenizer.json": {
+      "sha256": "ff61d7c33ad80987e37bcbeeeae7457c8e77d14a43a954fcde7be656fc26d6a9",
+      "size": 7033297,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/tokenizer.json",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/tokenizer_config.json": {
+      "sha256": "b2dc5c702e927b2446828520ec674584c55703f9c1c7242a9c972383dd4fd76d",
+      "size": 8895,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/tokenizer_config.json",
+      "unchanged": true
+    },
+    "pretrained_models/VITAL-Vision-Encoder-300M/vocab.json": {
+      "sha256": "87a257b04b17642a0688c98cd1df89c398bda4fee532d6f88b38a659ecb4ac8d",
+      "size": 3383407,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/VITAL-Vision-Encoder-300M/vocab.json",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/config.json": {
+      "sha256": "8a09b467700c58138c29d53c605b34ebc69beaadd13274a8a2af8ad2c2f4032a",
+      "size": 4519,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/config.json",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/merges.txt": {
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "size": 524619,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/merges.txt",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/model.safetensors": {
+      "sha256": "a2bf730a0c7debf160f7a6b50b3aaf3703e7e88ac73de7a314903141db026dcb",
+      "size": 1710540580,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/model.safetensors",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/preprocessor_config.json": {
+      "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+      "size": 316,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/preprocessor_config.json",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/pytorch_model.bin": {
+      "sha256": "f1a17cdbe0f36fec524f5cafb1c261ea3bbbc13e346e0f74fc9eb0460dedd0d3",
+      "size": 1710671599,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/pytorch_model.bin",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/special_tokens_map.json": {
+      "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf",
+      "size": 389,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/special_tokens_map.json",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/tokenizer.json": {
+      "sha256": "a83e0809aa4c3af7208b2df632a7a69668c6d48775b3c3fe4e1b1199d1f8b8f4",
+      "size": 2224003,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/tokenizer.json",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/tokenizer_config.json": {
+      "sha256": "deef455e52fa5e8151e339add0582e4235f066009601360999d3a9cda83b1129",
+      "size": 905,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/tokenizer_config.json",
+      "unchanged": true
+    },
+    "pretrained_models/clip-vit-large-patch14/vocab.json": {
+      "sha256": "3f0c4f7d2086b61b38487075278ea9ed04edb53a03cbb045b86c27190fa8fb69",
+      "size": 961143,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/clip-vit-large-patch14/vocab.json",
+      "unchanged": true
+    },
+    "pretrained_models/bert-large-uncased/config.json": {
+      "sha256": "f9a38c9ffa369f288c3206d0bf352dfed11d7bdee93aa5b2de6d7fdc7bff7871",
+      "size": 571,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/config.json",
+      "unchanged": true
+    },
+    "pretrained_models/bert-large-uncased/model.safetensors": {
+      "sha256": "28349a5c57338d0dca591bb95de533897c2399095c69d61e09604b46f444a4c4",
+      "size": 1344951957,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/model.safetensors",
+      "unchanged": true
+    },
+    "pretrained_models/bert-large-uncased/pytorch_model.bin": {
+      "sha256": "be24b235c46198938ac269939f8341ae479f2150dc278a342a3ffddefad35434",
+      "size": 1344997306,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/pytorch_model.bin",
+      "unchanged": true
+    },
+    "pretrained_models/bert-large-uncased/tokenizer.json": {
+      "sha256": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+      "size": 466062,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/tokenizer.json",
+      "unchanged": true
+    },
+    "pretrained_models/bert-large-uncased/tokenizer_config.json": {
+      "sha256": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+      "size": 48,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/tokenizer_config.json",
+      "unchanged": true
+    },
+    "pretrained_models/bert-large-uncased/vocab.txt": {
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "size": 231508,
+      "source": "/hdd/u202511081000084/IMC_QZL/pretrained_models/bert-large-uncased/vocab.txt",
+      "unchanged": true
+    },
+    "requirements.txt": {
+      "sha256": "0e36f4fb1ddff84b826e1b05bb1863f78f31b9e17a0210d87500db6c4f6891ed",
+      "size": 124,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/requirements.txt",
+      "unchanged": true
+    },
+    "evaluate.py": {
+      "sha256": "6f95105cbd6327a2e7f7006b8ad50ce3311f0a94310190678af7ccca51c053df",
+      "size": 2161,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/evaluate.py",
+      "unchanged": false
+    },
+    "train.py": {
+      "sha256": "3f3cab76deac6f80226bacbaefb44db3854e26bada53009c8ad4489d318a1b26",
+      "size": 841,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/train.py",
+      "unchanged": false
+    },
+    "infer.py": {
+      "sha256": "360418cad23c94204ecdbd294878fae1ebe3e5e9bc870de241580fbd3f520b7c",
+      "size": 2935,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/infer.py",
+      "unchanged": false
+    },
+    "scripts/infer.sh": {
+      "sha256": "6b31c3dde148f15d5269e99c672f12119c74bdd2cf0798dd2a83d08766020770",
+      "size": 149,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/scripts/infer.sh",
+      "unchanged": true
+    },
+    "scripts/evaluate.sh": {
+      "sha256": "657ea5a70edd8dca52cf9cde9f66688206b9a9882dd15b562db6bab4f7d05b39",
+      "size": 152,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/scripts/evaluate.sh",
+      "unchanged": true
+    },
+    "scripts/train.sh": {
+      "sha256": "0e23a02082338a5bf6d476f1a7e7dfb124d1e8bd67e5dd37cbe63d0d47e84a52",
+      "size": 149,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/scripts/train.sh",
+      "unchanged": true
+    },
+    "models/artifact_query.py": {
+      "sha256": "6ff6e96ab02dff63a0b7eb790cbab3cffb11ee1cd11c5a671cc67ec24f3dd00b",
+      "size": 6111,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/artifact_query.py",
+      "unchanged": true
+    },
+    "models/film.py": {
+      "sha256": "2d60bd8103947c01424c86bf047896d8d44df222afb4c717c3fe652d6a38e876",
+      "size": 3658,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/film.py",
+      "unchanged": true
+    },
+    "models/registry.py": {
+      "sha256": "7c3d2769ca0a026d9c4d1ab6e4abfdbffa754d082a8fc144b85946da1bef2f1a",
+      "size": 435,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/registry.py",
+      "unchanged": true
+    },
+    "models/moe.py": {
+      "sha256": "f62441da7d094a0bf61f1614c200e4914163d9a24c3e7e934fc4918de7a202cd",
+      "size": 2946,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/moe.py",
+      "unchanged": true
+    },
+    "models/__init__.py": {
+      "sha256": "a55d1fa62191bff2a3a3f9e0ee5fb7fb693e94ee06f78610c7cf137b79e30ff2",
+      "size": 845,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/__init__.py",
+      "unchanged": true
+    },
+    "models/fusion.py": {
+      "sha256": "cf799310b3d9bd18aeca48c83c9c5f7f1221a13c53d8b37514a032dcfa3a6fe8",
+      "size": 3783,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/fusion.py",
+      "unchanged": true
+    },
+    "models/blip_temporal.py": {
+      "sha256": "110c3b037b22692fa05273ce749cfd5c40b59837c7853f5e0f49a98f2996b594",
+      "size": 1423,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/blip_temporal.py",
+      "unchanged": true
+    },
+    "models/aider.py": {
+      "sha256": "7e9e4b62cd081379e2abfc376966688d97af1e08c343f065e6f43a84695e270a",
+      "size": 16274,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/aider.py",
+      "unchanged": true
+    },
+    "models/task_private.py": {
+      "sha256": "2ac174cebd69cfa759ba97c938290459cfc275b094a4f2a022972c4df00eb2a6",
+      "size": 2306,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/task_private.py",
+      "unchanged": true
+    },
+    "utils/eduaigv_splits.py": {
+      "sha256": "5f672a3c9f6f6353e4502492aea221aed8949783feba8efbcfb955e558238ca7",
+      "size": 4426,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/eduaigv_splits.py",
+      "unchanged": true
+    },
+    "utils/initialization.py": {
+      "sha256": "01dec33cf0b0fa999193f93df01c5381104cf79fa8e0d967d8b5e63d79786d94",
+      "size": 11043,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/initialization.py",
+      "unchanged": true
+    },
+    "utils/head_rank.py": {
+      "sha256": "562e25be91950c361ab6e6443702abd0ae5595fa85b9565370ffc4387f3e06ab",
+      "size": 2606,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/head_rank.py",
+      "unchanged": true
+    },
+    "utils/eduaigv.py": {
+      "sha256": "3c93f9bc53d299130e73b43d9a579eef4efc88a3e233ffa1dc49ac0f754d6144",
+      "size": 14758,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/eduaigv.py",
+      "unchanged": true
+    },
+    "utils/split_protocol.py": {
+      "sha256": "5bcac6b9d134de9fa91a41435c6001051ab97c5e7319fc394960bf43f10632a7",
+      "size": 4449,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/split_protocol.py",
+      "unchanged": true
+    },
+    "utils/videofeedback.py": {
+      "sha256": "60a7172b68c83ec55650a25ec6a28b045ee791a151fd05313856e8108898c744",
+      "size": 12945,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/videofeedback.py",
+      "unchanged": true
+    },
+    "utils/provenance.py": {
+      "sha256": "a3e67d4f6847fb45fccfef8b77a588c8e0014ebb691603f8a658bdc8090617fc",
+      "size": 5426,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/provenance.py",
+      "unchanged": false
+    },
+    "utils/__init__.py": {
+      "sha256": "0136b3464ef3db6cce8b3c4178dbadcd8c99ac940b437fa38d3951d7753956cc",
+      "size": 108,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/__init__.py",
+      "unchanged": true
+    },
+    "utils/portable.py": {
+      "sha256": "cf4d3b14f34cf881e6972b98ea333026ae640602dbdf1a4da6b9d9a57ac38a0b",
+      "size": 3226,
+      "source": null,
+      "unchanged": false
+    },
+    "utils/private_task_modules.py": {
+      "sha256": "3e5bf0cef0a1dc05e453545a6b5d291f0fa090c1662ff24f2e839fa43fd1f21a",
+      "size": 4728,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/private_task_modules.py",
+      "unchanged": false
+    },
+    "utils/experiment.py": {
+      "sha256": "b99d159e9753b92a9add1d8854687868f2947b49fab48542a7d165c40deb3d38",
+      "size": 7328,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/experiment.py",
+      "unchanged": true
+    },
+    "utils/config.py": {
+      "sha256": "bc23e5cf063ac99eeb7fe4cb58547a6526a0a0b88741eb71a80f7e59441d5d2b",
+      "size": 2726,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/utils/config.py",
+      "unchanged": false
+    },
+    "dataset/artifact_features_v3.py": {
+      "sha256": "f2081dfec4c4c420ec1accf19bcf3b747862e5bfbcf57c31a434d9180598cde6",
+      "size": 4501,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/artifact_features_v3.py",
+      "unchanged": true
+    },
+    "dataset/frame_sampling.py": {
+      "sha256": "74f2d648b0e0da6c3b2ab7d62c8a6335c9e85cbe39eb3ef3549c80226baaed6c",
+      "size": 3073,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/frame_sampling.py",
+      "unchanged": true
+    },
+    "dataset/__init__.py": {
+      "sha256": "fe8f77b7acb9adf5a2f573dff975d2aed8879ec28e30e37d1329dba5e6ce40b4",
+      "size": 197,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/__init__.py",
+      "unchanged": true
+    },
+    "dataset/joint.py": {
+      "sha256": "2943c5b2c8df59ce4e8048947b6c3f3d59de7cda96bc4cc595efcb95021f2c55",
+      "size": 1574,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/joint.py",
+      "unchanged": true
+    },
+    "dataset/artifact_prior.py": {
+      "sha256": "4975a1c657df1ff3b068dbb702d798dff9bc6ce4178bee026ad44a3bcf016a28",
+      "size": 6024,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/artifact_prior.py",
+      "unchanged": true
+    },
+    "dataset/loader.py": {
+      "sha256": "f053c672066150c7e9b0d0ead62f6c4e1d1c43cf29e9ee37a6c757be31ad6ab9",
+      "size": 1795,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/loader.py",
+      "unchanged": true
+    },
+    "dataset/video_dataset.py": {
+      "sha256": "e91485f8f52726992967abd06457f6ed585bde9dabb34557212d7611e8f0ebb6",
+      "size": 8596,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/dataset/video_dataset.py",
+      "unchanged": true
+    },
+    "tests/test_training.py": {
+      "sha256": "8f3c195e1292340b12871b2530e58368557b9f9863e9c61b6b80291c2dc82658",
+      "size": 4219,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/tests/test_training.py",
+      "unchanged": true
+    },
+    "tests/__init__.py": {
+      "sha256": "569d91eb3562409bc073be3e3c407341e12e78947245b8752f19b1b57d29f76f",
+      "size": 54,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/tests/__init__.py",
+      "unchanged": true
+    },
+    "tests/test_private_task_modules.py": {
+      "sha256": "4388e11b30b1e8c8c1e504d9ffb071ee0d70c5be0aa6a183b837a97181924249",
+      "size": 9678,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/tests/test_private_task_modules.py",
+      "unchanged": true
+    },
+    "engine/eduaigv_splits.py": {
+      "sha256": "8dc889996c2311c5b2cc897c77aa634768bcdb4de6aeb5cb45019cc14d9cef01",
+      "size": 23490,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/eduaigv_splits.py",
+      "unchanged": true
+    },
+    "engine/sampling.py": {
+      "sha256": "aaf53c3f2c6d69f08f12fbfba86d64e564c1216c62b3d5c2672159d2f0181f61",
+      "size": 2256,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/sampling.py",
+      "unchanged": true
+    },
+    "engine/memory.py": {
+      "sha256": "93dc314a7e281471805db4717d64d10cdd070ca4c50b27527eb9ee91a8a0fe96",
+      "size": 4097,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/memory.py",
+      "unchanged": true
+    },
+    "engine/audit.py": {
+      "sha256": "14edb9b42ea24f0a3accc0f53bf1e614c1cbaad656a593118d0fb2be1aed6630",
+      "size": 1301,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/audit.py",
+      "unchanged": true
+    },
+    "engine/frozen_heads.py": {
+      "sha256": "2a8f0dd60a4bf8d2309781030afee7bd0005af48a954d90172c28df7acc398a9",
+      "size": 23287,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/frozen_heads.py",
+      "unchanged": true
+    },
+    "engine/runtime.py": {
+      "sha256": "d930af08350def92f3db3febf35006f0ea6ec9122f7521ec408608b2d15503ef",
+      "size": 717,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/runtime.py",
+      "unchanged": true
+    },
+    "engine/head_rank.py": {
+      "sha256": "ce882eefd9f16fc1c6510f608bd6a90a48f669b12d4ff72271d07364ec2eb5de",
+      "size": 24430,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/head_rank.py",
+      "unchanged": true
+    },
+    "engine/eduaigv.py": {
+      "sha256": "4cb6c09b67995a5b76454e3195dd6bb721688a2bed6dcb9015ed442f4071246f",
+      "size": 13624,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/eduaigv.py",
+      "unchanged": true
+    },
+    "engine/private_task_diagnostics.py": {
+      "sha256": "cec87225074d82a9c6f7bc3a04be41186825e3c58793175ed02a419fed0c3fe0",
+      "size": 5656,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/private_task_diagnostics.py",
+      "unchanged": false
+    },
+    "engine/optim.py": {
+      "sha256": "278601a706fa16ab7619a3d4d0cc7b6f9caebc2170305922aecd3b3d6fee765d",
+      "size": 4190,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/optim.py",
+      "unchanged": true
+    },
+    "engine/videofeedback.py": {
+      "sha256": "e267826bb2e2d260ec01427fa003ff88066148fc26daab4c3714126aead3b34d",
+      "size": 13047,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/videofeedback.py",
+      "unchanged": true
+    },
+    "engine/checkpoint.py": {
+      "sha256": "a7787e15c9e3c524b4d0d72021b553e0bff39eaa59073c3b9726b4b3d3d5cde4",
+      "size": 5628,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/checkpoint.py",
+      "unchanged": false
+    },
+    "engine/trainer.py": {
+      "sha256": "1b0e14749842d50c165759c9feaac55ed180b75095d30c631a9a3e3a05ec7c6c",
+      "size": 18935,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/trainer.py",
+      "unchanged": true
+    },
+    "engine/evaluation.py": {
+      "sha256": "9f3d50410a1c32c76aed604cada8ec78e6d494f02fcc18bf72990c4acde71717",
+      "size": 5387,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/evaluation.py",
+      "unchanged": true
+    },
+    "engine/routing.py": {
+      "sha256": "8118475cd785fd883aae340a2a3467042fd15864fadaf1495cf516d0c70bb6fb",
+      "size": 5805,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/routing.py",
+      "unchanged": true
+    },
+    "engine/io.py": {
+      "sha256": "4af4d24ff46ecea305fa583a0d69d0c5a78f63aef834d9422eb6d8fcc0b789a1",
+      "size": 660,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/io.py",
+      "unchanged": true
+    },
+    "engine/__init__.py": {
+      "sha256": "40fd1419be436fbb3c7b557a3d28840dc1195744ee62c7bc9c4fda0f97d53fb6",
+      "size": 53,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/__init__.py",
+      "unchanged": true
+    },
+    "engine/reporting.py": {
+      "sha256": "1357156f89465896f44f5d78cd658888e456dfe9900ee2e4870b11cec39d3c8e",
+      "size": 10433,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/reporting.py",
+      "unchanged": true
+    },
+    "engine/preflight.py": {
+      "sha256": "f858d2d2768925ef2adf48a5db6dd430a0d51939ca6599d1fc6e699ba7372a3c",
+      "size": 15950,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/preflight.py",
+      "unchanged": true
+    },
+    "engine/metrics.py": {
+      "sha256": "7600a4ff36824884cdab0a63415d62124de2dab629c32bd4511f26f79b35b7ea",
+      "size": 4642,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/metrics.py",
+      "unchanged": true
+    },
+    "engine/losses.py": {
+      "sha256": "9fb6a672259479c0b52f3dfafdd0a4f1aed2a7098da51591f9eedd13cb973d07",
+      "size": 4944,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/losses.py",
+      "unchanged": true
+    },
+    "engine/repeated_holdout.py": {
+      "sha256": "6595deec506730523c692bd417d3b4f3c2f6e7b9e06d2a93f1b4523403ba0eea",
+      "size": 15023,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/repeated_holdout.py",
+      "unchanged": true
+    },
+    "engine/gradients.py": {
+      "sha256": "225fe92381ad3800122bf94596a9ac77b8504f8939b2bbc68433df882ed40064",
+      "size": 2629,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/engine/gradients.py",
+      "unchanged": true
+    },
+    "artifacts/depth2_video_adaptive_fixed_position.pt": {
+      "sha256": "84f07fdfa7d0571b836429780351d8026c419322ad89252c484ab41c21a49189",
+      "size": 50396,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/depth2_video_adaptive_fixed_position.pt",
+      "unchanged": true
+    },
+    "artifacts/depth2_video_adaptive_fixed_position.json": {
+      "sha256": "09f6ed05572ad4d82db1d14cc3eab36708da92ee8b765fb3af3963c27bf85dc7",
+      "size": 718,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/depth2_video_adaptive_fixed_position.json",
+      "unchanged": true
+    },
+    "artifacts/baseline_seed42_initialization.pt": {
+      "sha256": "80273ff2f6f8d6c5965841bc559c49dd7276bf5832646a7952e4f5ee3cf14947",
+      "size": 36654110,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/baseline_seed42_initialization.pt",
+      "unchanged": true
+    },
+    "configs/med_config.json": {
+      "sha256": "d8b5029cc3c0124313d17009d043f0701bbe497f3721fa4ceb818720fe665326",
+      "size": 485,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/configs/med_config.json",
+      "unchanged": true
+    },
+    "configs/film_video_only_private_task_modules_no_clip.yaml": {
+      "sha256": "94e47d07b9f3e5fbface895d3a6043b29e695e3c955dfc9a4e631e3b5c6a91b7",
+      "size": 8961,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/configs/film_video_only_private_task_modules_no_clip.yaml",
+      "unchanged": true
+    },
+    "configs/model.yaml": {
+      "sha256": "eb60b8305d67a24be919d840acc50814a606d1a1aa5927168810bb3ac25c8fa7",
+      "size": 9073,
+      "source": null,
+      "unchanged": false
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/comparison_deltas.csv": {
+      "sha256": "f24bb06bedc56f4295779f288aa391c808778ac0741acb86645724f8d8cc4c58",
+      "size": 7626,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/comparison_deltas.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/last_routing.json": {
+      "sha256": "8eee40134c606f1ffcc645f520f84a0e27227e20b3781a4c92aa5bcffd5d36f4",
+      "size": 11810116,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/last_routing.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/preflight.json": {
+      "sha256": "32a4a0c7db6901ada53aa4d8a44296b1c4011f186ddfb5f8eda977cd248561f6",
+      "size": 2646,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/preflight.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/status.json": {
+      "sha256": "56eea3e295bcaa692bd158a159b0107a28c0f0cee01abb1a3acee466f4e72dea",
+      "size": 112,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/status.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/initialization_audit.json": {
+      "sha256": "d2ef93e26a07ff18f6ddd92d91b74caed7457bc75be3082ed3acc8af849af81f",
+      "size": 1525,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/initialization_audit.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/last_predictions_wide.csv": {
+      "sha256": "0a0c35ff9a9a73118c5c4615c22b1df1484cb4ad296b9e21a3186aaadf32970a",
+      "size": 42202,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/last_predictions_wide.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/best_evaluation.json": {
+      "sha256": "2362f7bcb9cd9c5d5c23421cfbc29245db802434687d13eba86d2e2625a72991",
+      "size": 277453,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/best_evaluation.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/last_evaluation.json": {
+      "sha256": "e323c52f9c8b334596a018bcda5a4129d82f4d503c1212c11c96a0bc34bd3533",
+      "size": 277382,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/last_evaluation.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/best_gap_diagnostics.json": {
+      "sha256": "67b8c878d2493d58c6f8477ba4e48240e2fe90b59b599b25487b35c3531406a0",
+      "size": 43126,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/best_gap_diagnostics.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/process_memory.json": {
+      "sha256": "63735fdb391c121e9b53dce86ba711f4b956161e7fa0f0f36bfd23a9ac7d1d5e",
+      "size": 533,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/process_memory.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/private_head_score_diagnostics.json": {
+      "sha256": "210766e40392fa54485d1238aa1ce26739d755813eb4d55e2552f3a00d132089",
+      "size": 469367,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/private_head_score_diagnostics.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/data_audit.json": {
+      "sha256": "7953698432fa7dd8225716ef7c7b61c2da75c32e62890dd4c966d8bb53d9ff93",
+      "size": 517,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/data_audit.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/last_gap_diagnostics.json": {
+      "sha256": "d797edabe94b9fb01171193002ebe6f02318b4d2b89d83304b520623c61c4f26",
+      "size": 43104,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/last_gap_diagnostics.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/parameters.json": {
+      "sha256": "7615bee701560dc99d9d8df512e103536fdec7630bf241605a696a6ddbf4580b",
+      "size": 1114,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/parameters.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/last_predictions_long.csv": {
+      "sha256": "e7ec2e3b0d3926e2a73ff9bfd7986255115009b495b411aba4a861317b5e3a68",
+      "size": 208271,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/last_predictions_long.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/comparison_metrics.csv": {
+      "sha256": "04a68838fb8506b3f80fbe4038f34a59b90c8e9b346c4643b84cc7e302135f0b",
+      "size": 3241,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/comparison_metrics.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/summary.json": {
+      "sha256": "8f7ef6d78da004e62f0dd42aae8c71898102bd93f017241f49d92c79da9b3dbc",
+      "size": 1102,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/summary.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/best_predictions_wide.csv": {
+      "sha256": "4b4e0f01b670b45b076fd678d8bbd001f8a584ff650583e5dc57622643f4b7c1",
+      "size": 42279,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/best_predictions_wide.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/best_predictions_long.csv": {
+      "sha256": "c5db515dde4a68a3c62c616682bd0c9baedd38e2b1e195d7cb2aab14cc822ddc",
+      "size": 208348,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/best_predictions_long.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/best_routing.json": {
+      "sha256": "85b3f58c223e0d3ccc5db33dd13203b162877afd2435a1b41773f3bde87b9c73",
+      "size": 11811976,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/best_routing.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/history.json": {
+      "sha256": "9d7d141a2127b5ec0ee0f28e01240784a556beb4600e0f37d0eccfcdd8553470",
+      "size": 11677,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/history.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/config.yaml": {
+      "sha256": "49fa7eb7a09230c6a113a47212190a612d654c64cf50af4124824480e058a5af",
+      "size": 8462,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/config.yaml",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sources.json": {
+      "sha256": "dc01d3f2029468a95feac7d29dc7afb0480231df00419c5e7f9073d202888342",
+      "size": 18349,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sources.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/encoding/centered_normalized_cosine.csv": {
+      "sha256": "24f575da95bd7c56cd67659be3a3afe09dc3ba7f90fdc6f177794814601392c5",
+      "size": 384,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/encoding/centered_normalized_cosine.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/encoding/task_tables.json": {
+      "sha256": "cbd01b9827bc280dd6c5a7ee7914b7b01804e373707bc263faa8fc9ff4d571a9",
+      "size": 197689,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/encoding/task_tables.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/encoding/original_input_initial_routes.json": {
+      "sha256": "43fb515f45d8e7835006a6e607acd06130e4a69ea33cb42e74fb51be9d96b8db",
+      "size": 6658,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/encoding/original_input_initial_routes.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/encoding/original_cosine.csv": {
+      "sha256": "f9af5f3d48e639e72385fa788b4a4572ea0ca3f4a64e8327f564dad1a04d9a2e",
+      "size": 339,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/encoding/original_cosine.csv",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_04_records.json": {
+      "sha256": "e3bb1d49b657b7763194cec5cde9012106ecf7cb64dfb398bcd7219c8a867937",
+      "size": 11814490,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_04_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_02.json": {
+      "sha256": "167dbc2209fc781d982371e2f7b26e28c498a1ffea1821e1b1488f0a05d8f244",
+      "size": 11092,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_02.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_02_records.json": {
+      "sha256": "7713144c5196c36695a5314281698ec586d67ae96cdb29dcfe638723cd70ec91",
+      "size": 11857883,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_02_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/initial.json": {
+      "sha256": "2b2398d92fc096a37828e8e3e1d174a2e5d4a08bde956b268940746be9da114e",
+      "size": 8294,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/initial.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_03.json": {
+      "sha256": "1d8a906eae96a6dab7c58e9bcee3691b5d9ce801a1fa0a2dacafe7f19c4bda78",
+      "size": 11053,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_03.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_07_records.json": {
+      "sha256": "85b3f58c223e0d3ccc5db33dd13203b162877afd2435a1b41773f3bde87b9c73",
+      "size": 11811976,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_07_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_09_records.json": {
+      "sha256": "6be03777dc04fd838fd653ead29eb390204ecb95a76a7ec63706b658ea256bbb",
+      "size": 11810600,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_09_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_10_records.json": {
+      "sha256": "8eee40134c606f1ffcc645f520f84a0e27227e20b3781a4c92aa5bcffd5d36f4",
+      "size": 11810116,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_10_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_08_records.json": {
+      "sha256": "07bbba0ccb5b7bc2d1ca5fa1f3350a2b46ee34d8bc747cf880e671d97d2a132d",
+      "size": 11808961,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_08_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_10.json": {
+      "sha256": "290c6d5cea1139938fe3fb1da24ae57e550319b3a567bbcfd09ca22ca9c73d91",
+      "size": 11055,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_10.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_07.json": {
+      "sha256": "c6a8abdea2ba534a750f99c863c61b77e9d89d3a9ec14e6d1e67a94d3497d2f7",
+      "size": 11081,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_07.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_09.json": {
+      "sha256": "576623ca68cf3370a7174007c57d47a0294cbe6d29c77a4721031f9746d646e3",
+      "size": 11065,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_09.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_01.json": {
+      "sha256": "14eb9a0758f7536a38d637e656d2aaf32a79e307cbc797c182aa8b62c313cb8d",
+      "size": 10958,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_01.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_06_records.json": {
+      "sha256": "f572bee8f4a1c2daec6dc9c81b1958fb858b4807d47ff68b00a85ad554d85076",
+      "size": 11805763,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_06_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_08.json": {
+      "sha256": "ecc9ca3d0613845228cca6472cc3767593d5727b8a638f228edab2ec6b247600",
+      "size": 11045,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_08.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_03_records.json": {
+      "sha256": "e1b245be20555b8d1193a8eb61a562466cfe0afcf4a24eba2647e647a14a4670",
+      "size": 11826774,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_03_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_06.json": {
+      "sha256": "d923260eec714f8232fd20457865f1c682df3b1a91fa858e4eef897a04d8c27c",
+      "size": 11049,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_06.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_05_records.json": {
+      "sha256": "da3f208908627e4f06af036f086124aac645477ce99e8516e730251c34592efd",
+      "size": 11806306,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_05_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_05.json": {
+      "sha256": "6a2efe88aab24cd3a8e7eba5fe0fdf691414c80c79f5eb6546a3369c16921767",
+      "size": 11084,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_05.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_04.json": {
+      "sha256": "8cd84db33843af766eb3b9e48caeca18912e8f196f3e311ddc64de141a14b542",
+      "size": 11091,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_04.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_01_records.json": {
+      "sha256": "9879a66e7852bc511251ac9806bbce07df05e89b24f732d968c9571c90aff190",
+      "size": 11932619,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/moe_routing/epoch_01_records.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_02.json": {
+      "sha256": "0f26e553317df965ca5155bbd008dd19af1eb25b4e4a8a3a24423c927eed88c8",
+      "size": 395,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_02.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_03.json": {
+      "sha256": "fb335f2dfe7feb86280eb9d667eaaebe2eeb79018ff0c51f215290280f4db2e7",
+      "size": 392,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_03.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_10.json": {
+      "sha256": "5d1c8a4913cf97b09c24d4ce8d4ad939ad4ff8afecb63a43de635c8cc9e5ea63",
+      "size": 392,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_10.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_07.json": {
+      "sha256": "c31cce234703c6fe2b854cb022b31b1b8013ada78fb5a53f63219fe834801c83",
+      "size": 392,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_07.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_09.json": {
+      "sha256": "d8611317c7a36cb962d99075a05ed475b07dbf0d16602646ae44dd237686a813",
+      "size": 392,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_09.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_01.json": {
+      "sha256": "79ef32fb8e799774780f5ba95a7a2bfb6f2ad5fbd02960f3e2c13016d31f7f12",
+      "size": 393,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_01.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_08.json": {
+      "sha256": "0c2de6251226f82cf388b31f3f3a91ef9c03012828fab8b3b8effbe0115508b4",
+      "size": 391,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_08.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_06.json": {
+      "sha256": "48b7a8c26a879045928471b9b52f43647f674ecd089d1d8139be1559c2e04db3",
+      "size": 389,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_06.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_05.json": {
+      "sha256": "72feb6584dfa528fe0335a58b149034109b8cd94cd2f5397ebc1d27110893e68",
+      "size": 391,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_05.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_04.json": {
+      "sha256": "b194dc0975ffd97aec0b9d6ab320df3c84d79aae25fe0edef82c6ae85255a51b",
+      "size": 394,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/film/epoch_04.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_02.json": {
+      "sha256": "a45bac850793ba32b06ac96e1667c85b194710b9623a5727dc1d7435cd81c712",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_02.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_03.json": {
+      "sha256": "c395429e0707ba6b9b76ba3a6917915c3c33dc6210174d813e6e584533e0496f",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_03.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_10.json": {
+      "sha256": "0c23c1cc1e44079bd67ed55ee54affdacf53ee58df20b38181bfbcac7060de14",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_10.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_07.json": {
+      "sha256": "7fd5849c256e0b0629af3588ae676e128fdd7ff064a35f553080e17ed5828382",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_07.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_09.json": {
+      "sha256": "f05af5c190a449e4467dfc29aea13a735d4dccd6a483ad51f100381dbc1fad47",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_09.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_01.json": {
+      "sha256": "155a462b7a00b5935b68d46fa27acce4f11bb0b45890925a22a9a895fe282c5d",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_01.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_08.json": {
+      "sha256": "149db02de2e0fae9525779147a7ecc3e298c08f949f9cac166659c7c75697a44",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_08.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_06.json": {
+      "sha256": "b1f40ba17a938dd8598e4e2b244a440a247f9b7fb41ba166a450d9c8c514d092",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_06.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_05.json": {
+      "sha256": "4ee56e4a5114cbbd9b2f92b13fe8eb63a2d42ce8c2b3930454749938acdf8906",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_05.json",
+      "unchanged": true
+    },
+    "outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_04.json": {
+      "sha256": "e4e687a9319668bb02640234204e7c9de0c95abec1201b04e087c94c239a74c2",
+      "size": 35020,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/runs/film_video_only_private_heads_seed42/sampling/epoch_04.json",
+      "unchanged": true
+    },
+    "artifacts/reference/preflight.json": {
+      "sha256": "8fff27a4a677639f862a1546b9cac8274aaed00473a347eed93b0065cddf8e36",
+      "size": 1641,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/reference/preflight.json",
+      "unchanged": true
+    },
+    "artifacts/reference/verification.json": {
+      "sha256": "e01537ab842438d065507943202efb0e3f17262a53117ba33e7fa24d49e47e07",
+      "size": 4180,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/reference/verification.json",
+      "unchanged": true
+    },
+    "artifacts/reference/historical_config.yaml": {
+      "sha256": "98bdbdafedef44161bcacf457896d0b471acab5209fafc92d5b3c56368ac7d93",
+      "size": 4209,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/reference/historical_config.yaml",
+      "unchanged": true
+    },
+    "artifacts/reference/task_tables.json": {
+      "sha256": "19422a9cc43e08161cd7e221f5ea944380cddf88647696b7c9b3aeeea224e5e2",
+      "size": 197667,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/reference/task_tables.json",
+      "unchanged": true
+    },
+    "artifacts/reference/checkpoint_sources.json": {
+      "sha256": "383e5eed8fedde8b23f1a6a77f4526b917084748e974770d4d06cd5f7b21102b",
+      "size": 31362,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/reference/checkpoint_sources.json",
+      "unchanged": true
+    },
+    "artifacts/reference/prior_verification.json": {
+      "sha256": "88d8d0dd1ab4a2b1106c77091b028adae7731309b25afdff63755c850db41ce4",
+      "size": 1876,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/reference/prior_verification.json",
+      "unchanged": true
+    },
+    "artifacts/reference/config.yaml": {
+      "sha256": "750a05bcf2b32946c2ae2bc3a379a8c80c3dc26b0d4d70303ec7e35b6361309a",
+      "size": 7656,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/artifacts/reference/config.yaml",
+      "unchanged": true
+    },
+    "data/AIGVQA-DB/AIGVQA_DB_train.jsonl": {
+      "sha256": "bb0cad63c209234d5bef5076c1a7a9877574acbd58791116d93da29931ef0f50",
+      "size": 215776,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/data/AIGVQA-DB/AIGVQA_DB_train.jsonl",
+      "unchanged": true
+    },
+    "data/AIGVQA-DB/AIGVQA_DB_test.jsonl": {
+      "sha256": "53eb08cd5e0624f5498e602e38024b0f2fc836515a5147141f292458ad0f3068",
+      "size": 51183,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/data/AIGVQA-DB/AIGVQA_DB_test.jsonl",
+      "unchanged": true
+    },
+    "models/backbones/modeling_intern_vit.py": {
+      "sha256": "d3e0f68f29e86be1f3e6e101dc45303ec24e5115e0034de101665972576eb348",
+      "size": 18099,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/modeling_intern_vit.py",
+      "unchanged": true
+    },
+    "models/backbones/slowfast.py": {
+      "sha256": "0de641dfe4fc8096dafd0af8c9c0131ba1d05f587c6d70cf44911969ebe9f864",
+      "size": 2488,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/slowfast.py",
+      "unchanged": true
+    },
+    "models/backbones/configuration_intern_vit.py": {
+      "sha256": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8",
+      "size": 5548,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/configuration_intern_vit.py",
+      "unchanged": true
+    },
+    "models/backbones/__init__.py": {
+      "sha256": "276c8b3bc545b22a8e676e82cbc177917a2d7a080c34360a03e9513c3efcbd45",
+      "size": 258,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/__init__.py",
+      "unchanged": true
+    },
+    "models/backbones/vital.py": {
+      "sha256": "2b61ded6399f037c58f85283807ea3d04bc65b094472c5b9fcd1bfbe6f04d937",
+      "size": 3982,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/vital.py",
+      "unchanged": true
+    },
+    "models/backbones/blip.py": {
+      "sha256": "d48aa8227faa651f03e1abef2368ae545bcf92ff55f4c01b1a9e7592dc8dfd0a",
+      "size": 7926,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip.py",
+      "unchanged": true
+    },
+    "models/backbones/blip_legacy/vit.py": {
+      "sha256": "e2c3d0796fb4752c93702e3fbde65019b35682db490e7acbbbc24a7cdb29b9c4",
+      "size": 14241,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/vit.py",
+      "unchanged": true
+    },
+    "models/backbones/blip_legacy/__init__.py": {
+      "sha256": "3daf937092a9b4d1ba84c695c7f2e36a052f650fbcee17fbb164744b206b4ef7",
+      "size": 149,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/__init__.py",
+      "unchanged": true
+    },
+    "models/backbones/blip_legacy/blip_pretrain.py": {
+      "sha256": "770c42a52b192872835fda6b6cce480cebaac298a2f3f2da3a672e1a55177112",
+      "size": 652,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/blip_pretrain.py",
+      "unchanged": true
+    },
+    "models/backbones/blip_legacy/blip.py": {
+      "sha256": "682e3769f11f61c1d7b740314076bf69fa7def6443ca54a6118d5bc59c1539df",
+      "size": 1541,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/blip.py",
+      "unchanged": true
+    },
+    "models/backbones/blip_legacy/med.py": {
+      "sha256": "58d4cab32c83bfa07ff8130c3311bdce63976dcbb0992a4b692b5e2d5742cfe3",
+      "size": 42302,
+      "source": "/hdd/u202511081000084/IMC_QZL/AIDER/models/backbones/blip_legacy/med.py",
+      "unchanged": true
+    },
+    "README.md": {
+      "sha256": "21c4e8562696a175e0a4f47c1855fba3f8f5df87d9c023f47f8e35658efea450",
+      "size": 5223,
+      "source": null,
+      "unchanged": false
+    },
+    "scripts/verify_package.py": {
+      "sha256": "d525c0247f2654c58913de67d8fcc3256420f7256f78dbe29a922d337660a51f",
+      "size": 4081,
+      "source": null,
+      "unchanged": false
+    },
+    "requirements-tested.txt": {
+      "sha256": "ef840d4d6e86169130f8d79b22735198e01507223417022727b30d76ed981823",
+      "size": 289,
+      "source": null,
+      "unchanged": false
+    },
+    "verification/environment.json": {
+      "sha256": "8b48c65829ff70f3e0ad1f19a63d4308c16fe2cb205e23e06df09afa0e438446",
+      "size": 600,
+      "source": null,
+      "unchanged": false
+    },
+    "verification/model_load.log": {
+      "sha256": "20c62717c4cf0466291ad4007003c288d35f4f934ab89923d5853f0232c86f7e",
+      "size": 2921,
+      "source": null,
+      "unchanged": false
+    },
+    "verification/model_load.json": {
+      "sha256": "059983eaad3c86220b948525d99f2f5d634f436944a463dfda8aa06e6ed3b6f5",
+      "size": 1894,
+      "source": null,
+      "unchanged": false
+    },
+    "verification/unit_tests.log": {
+      "sha256": "78b37092b8d484c08c138c5698fcdb604d9245c95e7881bafa65d285f0fade05",
+      "size": 1391,
+      "source": null,
+      "unchanged": false
+    }
+  },
+  "unchanged_model_forward": true,
+  "source_experiment_untouched": true,
+  "external_data": "Dataset videos and derived Prior caches are not copied. Set AIDER_VIDEO_ROOT on another machine."
+}

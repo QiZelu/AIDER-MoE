@@ -1,0 +1,61 @@
+{
+  "record_date": "2026-10-28",
+  "aider_lora": {
+    "variant": "two_stage",
+    "phase_epochs": [
+      5,
+      5
+    ],
+    "checkpoint": "best",
+    "identity_confirmed_by_user": true,
+    "metrics": {
+      "static": {
+        "count": 115,
+        "plcc": 0.9220314831962539,
+        "srocc": 0.9182698748010542,
+        "krocc": 0.7511741442711647,
+        "rmse": 0.04865805432200432
+      },
+      "temporal": {
+        "count": 115,
+        "plcc": 0.9469592478126134,
+        "srocc": 0.9392135119145908,
+        "krocc": 0.776975072031779,
+        "rmse": 0.048320114612579346
+      },
+      "dynamic": {
+        "count": 115,
+        "plcc": 0.6634988055925007,
+        "srocc": 0.689221352342052,
+        "krocc": 0.5045838238209366,
+        "rmse": 0.0698862075805664
+      },
+      "text_video": {
+        "count": 115,
+        "plcc": 0.769905398184385,
+        "srocc": 0.7454264335890819,
+        "krocc": 0.5695517822042757,
+        "rmse": 0.07039207220077515
+      },
+      "macro": {
+        "plcc": 0.8255987336964383,
+        "srocc": 0.8230327931616948,
+        "krocc": 0.650571205582039,
+        "rmse": 0.059314112178981304
+      }
+    },
+    "source": "User supplied metrics and checkpoint identity in this conversation"
+  },
+  "clip_projection_version": "criterion7-intent-projection-v1",
+  "clip_comparison_csv": "/Users/zelu/Desktop/Codes/AIGVQA Task Embedding/results/criterion7-intent-projection-v1/comparison_summary.csv",
+  "source_sha256": {
+    "/Users/zelu/Desktop/Codes/AIDER-main/AIDER-LoRA/README.md": "da446781aef860ae10536db5b370d90a0f8dce34ffdb3774a2286ee76660eb99",
+    "/Users/zelu/Desktop/Codes/AIDER-main/AIDER-LoRA/config.yaml": "cb64be30cbd7edc62fe7c30d4fb5dd84b9fc748c412333ed70a47dc80451a53e",
+    "/Users/zelu/Desktop/Codes/AIDER-main/AIDER-LoRA/models/fusion.py": "0a72428ddc1f674e317da75fe5276b35b81ef985657b3cd5a09a31e213620854",
+    "/Users/zelu/Desktop/Codes/AIDER-main/AIDER-LoRA/models/lora.py": "02deb287d3209ec2d567c3d2bc94cd12eed2d6945b93e6275da746d2498acac1",
+    "/Users/zelu/Desktop/Codes/AIDER-main/AIDER-LoRA/models/film.py": "2d60bd8103947c01424c86bf047896d8d44df222afb4c717c3fe652d6a38e876",
+    "/Users/zelu/Desktop/Codes/AIGVQA Task Embedding/results/criterion7-intent-projection-v1/comparison_summary.csv": "75a8eec932e6b730fa001d410fb9b0cae4510053a0eff77d0867330e54a5c6a1",
+    "/Users/zelu/Desktop/Codes/AIGVQA Task Embedding/data/criterion7_intent_v1/manifest.json": "59588a77b3d0f891338b306438d3bdd636ac2d5e80deac037099380356650852",
+    "/Users/zelu/Desktop/Codes/AIGVQA Task Embedding/work/intent_v1/train_projection.py": "154ee1c840186caa36b59e0919b94ccba5a6713622c9c007d290db96b27e02cb"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "source": "/hdd/u202511081000084/IMC_QZL/AIDER/outputs/multitask/ablations/centered_shared_multimodal_readout_seed42/film_transformer/best.pt",
+  "source_sha256": "3a4402c65f164f7c67398e75f572d0ff6f4982270a6d5c4f7148319b0e508cbc",
+  "extracted_keys": [
+    "fusion.position_encoding"
+  ],
+  "trained_parameters_imported": 0,
+  "authorization": "user explicitly approved fixed positional buffer only",
+  "shape": [
+    1,
+    8,
+    1536
+  ],
+  "dtype": "torch.float32",
+  "tensor_sha256": "e689d3fabf553e93c441762e5c536cf87d7357f994b13a56009a3b0e683574aa",
+  "snapshot_sha256": "84f07fdfa7d0571b836429780351d8026c419322ad89252c484ab41c21a49189",
+  "recomputed_sinusoid_max_abs_difference": 2.384185791015625e-07
+}

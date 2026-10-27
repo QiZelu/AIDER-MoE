@@ -1,0 +1,17 @@
+test_absent_private_modules_existing_adam_states (tests.test_private_task_modules.PrivateTaskTests) ... ok
+test_config_copies_rng_and_counts (tests.test_private_task_modules.PrivateTaskTests) ... ok
+test_evaluation_diagnostics_and_summary (tests.test_private_task_modules.PrivateTaskTests) ... ok
+test_explicit_ids_not_inferred_from_features (tests.test_private_task_modules.PrivateTaskTests) ... ok
+test_full_feature_gradients_no_clip_and_checkpointing (tests.test_private_task_modules.PrivateTaskTests) ... /home/u202511081000084/miniconda3/envs/uve-copy/lib/python3.10/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+ok
+test_initial_predictions_routes_and_formula (tests.test_private_task_modules.PrivateTaskTests) ... ok
+test_sampling_and_checkpoint_rejection (tests.test_private_task_modules.PrivateTaskTests) ... ok
+test_two_updates_match_original_loop (tests.test_training.TrainingTests) ... {"split": "unit_test", "epoch": 2, "step": 1, "loss": 0.2814844250679016}
+{"split": "unit_test", "epoch": 2, "step": 2, "loss": 0.2914871275424957}
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 5.068s
+
+OK
